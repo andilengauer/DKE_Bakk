@@ -1,0 +1,370 @@
+2017-04-29 18:17:51,621 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2017-04-29 18:17:51,774 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2017-04-29 18:17:51,887 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2017-04-29 18:17:51,976 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2017-04-29 18:17:52,032 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+2017-04-29 18:17:52,119 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+2017-04-29 18:17:52,235 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+2017-04-29 18:17:52,314 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+2017-04-29 18:17:52,359 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+2017-04-29 18:17:52,505 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+2017-04-29 18:17:52,556 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom
+2017-04-29 18:17:52,658 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom
+2017-04-29 18:17:52,718 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+2017-04-29 18:17:52,802 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+2017-04-29 18:17:52,851 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2017-04-29 18:17:52,933 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2017-04-29 18:17:52,982 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+2017-04-29 18:17:53,069 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+2017-04-29 18:17:53,137 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+2017-04-29 18:17:53,220 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+2017-04-29 18:17:53,267 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+2017-04-29 18:17:53,354 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+2017-04-29 18:17:53,405 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+2017-04-29 18:17:53,485 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+2017-04-29 18:17:53,535 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+2017-04-29 18:17:53,615 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+2017-04-29 18:17:53,663 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+2017-04-29 18:17:53,745 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+2017-04-29 18:17:53,796 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+2017-04-29 18:17:53,876 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+2017-04-29 18:17:53,922 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+2017-04-29 18:17:54,008 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+2017-04-29 18:17:54,055 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+2017-04-29 18:17:54,137 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+2017-04-29 18:17:54,187 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+2017-04-29 18:17:54,267 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+2017-04-29 18:17:54,316 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+2017-04-29 18:17:54,398 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+2017-04-29 18:17:54,505 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+2017-04-29 18:17:54,593 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+2017-04-29 18:17:54,644 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2017-04-29 18:17:54,724 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2017-04-29 18:17:55,000 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2017-04-29 18:17:55,080 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2017-04-29 18:17:55,126 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2017-04-29 18:17:55,208 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2017-04-29 18:17:55,266 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2017-04-29 18:17:55,349 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2017-04-29 18:17:55,395 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+2017-04-29 18:17:55,507 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+2017-04-29 18:17:55,556 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2017-04-29 18:17:55,637 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2017-04-29 18:17:55,684 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2017-04-29 18:17:55,764 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2017-04-29 18:17:55,810 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2017-04-29 18:17:55,891 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2017-04-29 18:17:56,002 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2017-04-29 18:17:56,287 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2017-04-29 18:17:56,327 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2017-04-29 18:17:56,630 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2017-04-29 18:17:56,670 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2017-04-29 18:17:56,774 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2017-04-29 18:17:56,813 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2017-04-29 18:17:56,900 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2017-04-29 18:17:56,942 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2017-04-29 18:17:57,039 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2017-04-29 18:17:57,159 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/pom.xml.
+2017-04-29 18:17:57,294 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.pom
+2017-04-29 18:17:57,347 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.pom
+2017-04-29 18:17:57,532 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.pom
+2017-04-29 18:17:57,625 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/apache/logging/log4j/log4j/2.3/log4j-2.3.pom
+2017-04-29 18:17:57,669 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.3/log4j-2.3.pom
+2017-04-29 18:17:57,796 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.3/log4j-2.3.pom
+2017-04-29 18:17:57,891 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/apache/apache/9/apache-9.pom
+2017-04-29 18:17:57,936 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+2017-04-29 18:17:58,027 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+2017-04-29 18:17:58,120 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3.pom
+2017-04-29 18:17:58,220 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3.pom
+2017-04-29 18:17:58,270 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://files.basex.org/maven/org/basex/basex-parent/8.5.3/basex-parent-8.5.3.pom
+2017-04-29 18:17:58,397 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/basex/basex-parent/8.5.3/basex-parent-8.5.3.pom
+2017-04-29 18:17:58,452 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.jar
+2017-04-29 18:17:58,585 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3.jar
+2017-04-29 18:18:02,295 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3.jar
+2017-04-29 18:18:02,351 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.jar
+2017-04-29 18:18:02,568 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.jar
+2017-04-29 18:18:02,760 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:02,760 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/main/resources
+2017-04-29 18:18:02,762 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:02,763 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/test/resources
+2017-04-29 18:18:04,011 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:04,012 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/main/resources
+2017-04-29 18:18:04,015 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:04,016 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/test/resources
+2017-04-29 18:18:14,976 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:14,977 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/main/resources
+2017-04-29 18:18:14,979 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:18:14,979 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/test/resources
+2017-04-29 18:20:40,958 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3-sources.jar
+2017-04-29 18:20:41,015 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3-sources.jar
+2017-04-29 18:20:41,311 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3-sources.jar
+2017-04-29 18:20:41,327 [Worker-1] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-api:2.3
+2017-04-29 18:20:41,465 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:20:41,474 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/main/resources
+2017-04-29 18:20:41,475 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:20:41,476 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/test/resources
+2017-04-29 18:27:34,339 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-04-29 18:27:34,396 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/pom.xml.
+2017-04-29 18:27:34,427 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SemNotamBaseX/src
+2017-04-29 18:27:34,427 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /SemNotamBaseX/src/test/java because it overlaps with /SemNotamBaseX/src
+2017-04-29 18:27:34,491 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-04-29 18:27:34,759 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:27:34,760 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/main/resources
+2017-04-29 18:27:34,761 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 18:27:34,762 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/SemNotamBaseX/src/test/resources
+2017-04-29 18:30:35,390 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2017-04-29 18:30:35,473 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2017-04-29 18:30:35,586 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2017-04-29 18:30:35,679 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2017-04-29 19:40:18,008 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/pom.xml.
+2017-04-29 19:40:18,054 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:40:18,055 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:40:18,056 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:40:18,057 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:40:18,620 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/pom.xml.
+2017-04-29 19:40:19,338 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:40:19,339 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:40:19,340 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:40:19,341 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:42:59,168 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:42:59,176 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:42:59,178 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:42:59,179 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:43:21,668 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:43:21,669 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:43:21,670 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:43:21,671 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:44:04,695 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:04,703 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:44:04,704 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:04,705 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:44:30,790 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:30,790 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:44:30,792 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:30,793 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:44:45,414 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:45,414 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:44:45,415 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:44:45,416 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:45:25,943 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:45:25,951 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:45:25,954 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:45:25,954 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:45:59,294 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:45:59,295 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:45:59,296 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:45:59,297 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:46:45,171 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3-sources.jar
+2017-04-29 19:46:47,333 [Worker-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://files.basex.org/maven/org/basex/basex/8.5.3/basex-8.5.3-sources.jar
+2017-04-29 19:46:47,345 [Worker-8] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.basex:basex:8.5.3
+2017-04-29 19:46:47,521 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:46:47,530 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:46:47,531 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:46:47,532 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 19:58:05,121 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:58:05,122 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 19:58:05,124 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 19:58:05,125 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 20:00:11,999 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:00:12,000 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 20:00:12,001 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:00:12,002 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 20:03:56,764 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:03:56,764 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 20:03:56,765 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:03:56,766 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-29 20:04:07,935 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:04:07,943 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-29 20:04:07,945 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-29 20:04:07,945 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:52:33,149 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:52:33,150 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:52:33,151 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:52:33,152 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:54:27,971 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:54:27,972 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:54:27,973 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:54:27,973 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:55:13,725 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:55:13,726 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:55:13,727 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:55:13,727 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:55:42,994 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:55:42,995 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:55:42,997 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:55:42,997 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:57:32,786 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:57:32,786 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:57:32,787 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:57:32,788 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 16:59:17,866 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:59:17,866 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 16:59:17,867 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 16:59:17,868 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:00:16,393 [Worker-118] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:00:16,394 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:00:16,394 [Worker-118] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:00:16,395 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:00:29,440 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:00:29,441 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:00:29,444 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:00:29,445 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:10:02,178 [Worker-130] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:10:02,178 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:10:02,179 [Worker-130] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:10:02,180 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:10:50,907 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:10:50,908 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:10:50,908 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:10:50,909 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:11:24,621 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:24,621 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:11:24,623 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:24,623 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:11:40,899 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:40,900 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:11:40,901 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:40,901 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:11:52,912 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:52,912 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:11:52,913 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:11:52,916 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:12:39,110 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:12:39,111 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:12:39,111 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:12:39,112 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:12:49,263 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:12:49,263 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:12:49,264 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:12:49,265 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:13:27,218 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:13:27,218 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:13:27,221 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:13:27,222 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:14:24,757 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:14:24,758 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:14:24,759 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:14:24,759 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-04-30 17:15:32,117 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:15:32,118 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-04-30 17:15:32,119 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-30 17:15:32,119 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 13:47:01,256 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 13:47:01,258 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 13:47:01,259 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 13:47:01,259 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 13:49:56,998 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 13:49:56,999 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 13:49:57,000 [Worker-146] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 13:49:57,000 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:07:24,172 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:07:24,173 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:07:24,174 [Worker-156] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:07:24,175 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:12:01,705 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/pom.xml.
+2017-05-01 14:12:02,193 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:02,195 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:12:02,198 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:02,198 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:12:02,557 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/pom.xml.
+2017-05-01 14:12:03,252 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:03,253 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:12:03,254 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:03,255 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:12:31,643 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:31,644 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:12:31,646 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:31,647 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:12:40,900 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:40,901 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:12:40,903 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:12:40,903 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 14:13:56,869 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:13:56,870 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 14:13:56,871 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 14:13:56,872 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 15:27:54,695 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 15:27:54,696 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 15:27:54,697 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 15:27:54,698 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 17:28:44,173 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 17:28:44,174 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 17:28:44,176 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 17:28:44,177 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 19:42:00,467 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:42:00,468 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 19:42:00,470 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:42:00,470 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 19:42:07,232 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:42:07,232 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 19:42:07,234 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:42:07,235 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 19:43:54,095 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:43:54,104 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 19:43:54,106 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:43:54,106 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 19:45:23,527 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:45:23,528 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 19:45:23,529 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:45:23,530 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-01 19:45:36,563 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:45:36,564 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-01 19:45:36,565 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-01 19:45:36,566 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-03 17:50:55,506 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-03 17:50:55,510 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-03 17:50:55,511 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-03 17:50:55,512 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-09 11:00:42,585 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 11:00:42,588 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-09 11:00:42,590 [Worker-296] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 11:00:42,590 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-09 16:21:55,058 [Worker-325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 16:21:55,060 [Worker-325] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-09 16:21:55,061 [Worker-325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 16:21:55,062 [Worker-325] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-09 16:22:03,970 [Worker-316] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 16:22:03,970 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-09 16:22:03,972 [Worker-316] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-09 16:22:03,973 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-10 08:42:28,266 [Worker-372] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:28,269 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-10 08:42:28,279 [Worker-372] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:28,280 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-10 08:42:50,638 [Worker-391] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: at.jku.dke.semnotam:SemNotamBaseX:0.0.1-SNAPSHOT @ /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/pom.xml.
+2017-05-10 08:42:50,756 [Worker-391] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:50,757 [Worker-391] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-10 08:42:50,758 [Worker-391] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:50,759 [Worker-391] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-10 08:42:51,880 [Worker-392] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:51,888 [Worker-392] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-10 08:42:51,890 [Worker-392] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-10 08:42:51,890 [Worker-392] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-11 09:59:23,374 [Worker-449] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 09:59:23,376 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-11 09:59:23,378 [Worker-449] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 09:59:23,378 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-11 10:02:03,360 [Worker-452] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 10:02:03,361 [Worker-452] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-11 10:02:03,364 [Worker-452] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 10:02:03,365 [Worker-452] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-15 14:12:53,591 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:12:53,592 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-15 14:12:53,596 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:12:53,597 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-15 14:14:28,026 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:14:28,035 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-15 14:14:28,036 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:14:28,037 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-15 14:19:41,758 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:19:41,766 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-15 14:19:41,767 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-15 14:19:41,768 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-17 19:43:30,307 [Worker-601] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-17 19:43:30,309 [Worker-601] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-17 19:43:30,310 [Worker-601] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-17 19:43:30,310 [Worker-601] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources
+2017-05-17 19:43:37,882 [Worker-603] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-17 19:43:37,883 [Worker-603] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/main/resources
+2017-05-17 19:43:37,884 [Worker-603] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-17 19:43:37,885 [Worker-603] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/SemNotamBaseX/src/test/resources

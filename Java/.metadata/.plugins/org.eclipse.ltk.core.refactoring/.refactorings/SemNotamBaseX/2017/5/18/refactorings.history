@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SemNotamBaseX/module_dke.xq&apos; to &apos;temporal_filter_module.xq&apos;" description="Rename resource &apos;module_dke.xq&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="module_dke.xq" name="temporal_filter_module.xq" stamp="1493660723319" updateReferences="true"/>
+</session>

@@ -1,0 +1,80 @@
+package jollyday;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
+import de.jollyday.Holiday;
+import de.jollyday.HolidayManager;
+import de.jollyday.configuration.impl.DefaultConfigurationProvider;
+
+public class JollydayHelper {
+	
+	public static void main(String[] args) {
+JollydayHelper.getHolidays(null, null, "at");
+		
+		Calendar c = Calendar.getInstance();
+		c.set(2017, 0, 1);
+		System.out.println(JollydayHelper.isHoliday("2017-01-01", "ny"));
+	}
+	
+	
+	public static void getHolidays(Date from , Date to, String country)
+	{
+		Set<Holiday> holidays = HolidayManager.getInstance().getHolidays(2017, "at");
+		Iterator<Holiday> i = holidays.iterator();
+		while(i.hasNext())
+		{
+			Holiday h = i.next();
+			System.out.println(h.getDescription() + h.getDate().toString());
+			
+		}
+			
+	}
+	private static Boolean isHoliday(Date date, String country)
+	{
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		//HolidayManager.getInstance(HolidayCalendar.AUSTRIA).isHoliday(c, HolidayType., args)
+		//HolidayCalendar.AUSTRIA
+		return HolidayManager.getInstance().isHoliday(cal,"at");
+	}
+	public static String isHoliday(String date, String country)
+	{
+		//SimpleDateFormat sdf = new SimpleDateFormat();
+		/*
+		Date d = new Date();
+		try {
+			d = sdf.parse(date);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		try
+		{
+		Calendar c = Calendar.getInstance();
+		c.set(2017, 0, 1);
+		
+		if(isHoliday(c.getTime(), country))
+			return "holiday";
+		else
+			return "no holiday";
+		}
+		
+		catch(Exception e)
+		{
+			StackTraceElement[] s = e.getStackTrace();
+			String val = "";
+			for(int i=0; i < s.length;i++)
+				val += "\r\n" + s[i].toString();
+			return val;
+		}
+		
+	}
+	public static Boolean isTest(int y, int m, int d)
+	{
+		Calendar c = Calendar.getInstance();
+		return y == 2017;
+	}
+}

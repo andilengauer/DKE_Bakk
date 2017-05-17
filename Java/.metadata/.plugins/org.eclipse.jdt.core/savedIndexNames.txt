@@ -1,0 +1,9 @@
+INDEX VERSION 1.127+/Users/Andreas/Documents/Bakk_DKE/Entwicklung/Java/.metadata/.plugins/org.eclipse.jdt.core
+2982306911.index
+1915796520.index
+2200149402.index
+1861858003.index
+1993042143.index
+3985021130.index
+127356456.index
+2349380549.index

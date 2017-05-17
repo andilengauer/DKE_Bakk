@@ -1,0 +1,14 @@
+package jollyday;
+
+import java.util.Date;
+import java.util.Set;
+
+import de.jollyday.Holiday;
+import de.jollyday.HolidayManager;
+
+public class JollydayHelper {
+	public static Set<Holiday> getHolidays(Date from , Date to, String country)
+	{
+		return HolidayManager.getInstance().getHolidays(1, "at");
+	}
+}

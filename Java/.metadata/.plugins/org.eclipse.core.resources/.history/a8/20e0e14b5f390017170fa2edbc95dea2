@@ -1,0 +1,11 @@
+package jollyday;
+
+import java.util.Date;
+
+public class JollydayHelper {
+	public static String getHolidays(Date from , Date to, String country)
+	{
+		
+		return "";
+	}
+}

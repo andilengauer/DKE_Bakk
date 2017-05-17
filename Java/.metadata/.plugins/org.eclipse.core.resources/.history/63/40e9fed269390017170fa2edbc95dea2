@@ -1,0 +1,22 @@
+package jollyday;
+
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
+import de.jollyday.Holiday;
+import de.jollyday.HolidayCalendar;
+import de.jollyday.HolidayManager;
+
+public class JollydayHelper {
+	public static void getHolidays(Date from , Date to, String country)
+	{
+		Set<Holiday> holidays = HolidayManager.getInstance().getHolidays(2017, "ny","nyc");
+		Iterator<Holiday> i = holidays.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next().getDescription());
+		}
+			
+	}
+}

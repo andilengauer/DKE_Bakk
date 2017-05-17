@@ -1,0 +1,11 @@
+package at.dke.hello;
+
+public class helloTest {
+	private String test = "world";
+	
+	public helloTest(String test)
+	{
+		this.test = test;
+	}
+
+}

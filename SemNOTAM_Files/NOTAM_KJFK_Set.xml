@@ -1,0 +1,2002 @@
+<!-- NOTAM FOR KJFK -->
+<Root>
+<entry>
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_41522880">
+  <ns5:boundedBy>
+    <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+      <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+      <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+    </Envelope>
+  </ns5:boundedBy>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="IAP_TS_TI_1_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:name>VOR RWY 4R</ns9:name>
+          <ns9:approachType>VOR</ns9:approachType>
+          <ns9:extension>
+            <ns11:ProcedureExtension ns5:id="IAP_TS_EX1_41522880">
+              <ns11:printableVersionNumber>0</ns11:printableVersionNumber>
+              <ns11:legacyControlNumber>13140</ns11:legacyControlNumber>
+            </ns11:ProcedureExtension>
+          </ns9:extension>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41522880"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41522880">
+              <ns12:theEvent ns2:href="#Event_1_41522880"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="Runway_11_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="Runway_TS_11_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Runway_TS_TI_11_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R/22L</ns9:designator>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_11_41522880">
+              <ns12:theEvent ns2:href="#Event_1_41522880"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41522880">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41522880">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41522880">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41522880">
+                          <ns9:note>DME required except for aircraft equipped with suitable RNAV system with GPS, CRI R-140 unusable</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41522880">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP2_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP2_TS_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="IAP2_TS_TP_41522880">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:ProcedureAvailability ns5:id="IAP2_TS_TP_AVAIL_41522880">
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_1_41522880">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_1_41522880">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_2_41522880">
+                  <ns9:propertyName>additionalEquipment</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_2_41522880">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:status>USABLE</ns9:status>
+            </ns9:ProcedureAvailability>
+          </ns9:availability>
+          <ns9:annotation>
+            <ns9:Note ns5:id="IAP2_TS_Note_2_41522880">
+              <ns9:propertyName>status</ns9:propertyName>
+              <ns9:purpose>DESCRIPTION</ns9:purpose>
+              <ns9:translatedNote>
+                <ns9:LinguisticNote ns5:id="IAP2_TS_Note_L_2_41522880">
+                  <ns9:note/>
+                </ns9:LinguisticNote>
+              </ns9:translatedNote>
+            </ns9:Note>
+          </ns9:annotation>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Navaid ns5:id="N_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="N_TS_TI_1_1_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:type>VOR</ns9:type>
+          <ns9:designator>CRI</ns9:designator>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS2_1_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="N_TS2_TP_1_41522880">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:NavaidOperationalStatus ns5:id="N_TS2_NOS_1_41522880">
+              <ns9:operationalStatus>OTHER:UNUSABLE</ns9:operationalStatus>
+            </ns9:NavaidOperationalStatus>
+          </ns9:availability>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Navaid>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_41522880">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:servedCity>
+            <ns9:City ns5:id="Airport_City_1_41522880">
+              <ns9:name>NEW YORK</ns9:name>
+            </ns9:City>
+          </ns9:servedCity>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_41522880">
+              <ns5:pos>40.6397511111111 -73.7789255555556</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns11:AirportHeliportExtension ns5:id="AHE_EVENT_2_41522880">
+              <ns11:stateTerritory>NY</ns11:stateTerritory>
+            </ns11:AirportHeliportExtension>
+          </ns9:extension>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_41522880">
+              <ns12:theEvent ns2:href="#Event_1_41522880"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_41522880">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>802</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_41522880">
+              <ns12:number>8649</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-10-19T04:34:00.000Z</ns12:issued>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201510190434</ns12:effectiveStart>
+              <ns12:effectiveEnd>201604160434EST</ns12:effectiveEnd>
+              <ns12:text>IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4R, ORIG...
+DME REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-140 UNUSABLE.
+1510190434-1604160434EST</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_41522880">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!FDC 5/8649 JFK IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4R, ORIG...
+DME REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-140 UNUSABLE.
+1510190434-1604160434EST</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_41522880">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Q) ZNY/QPIXX/I/NBO/A/000/999/4038N07346W025
+A) KJFK
+B) 1510011951
+C) 1603291950EST
+E) IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4R, ORIG...
+DME REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-140 UNUSABLE.</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_41522880">
+              <ns6:classification>FDC</ns6:classification>
+              <ns6:accountId>FDC</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A7490/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-10-19T04:38:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_41522875">
+  <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP_1_41522875">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP_TS_1_41522875">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="IAP_TS_TI_1_41522875">
+              <ns5:timePosition>2015-10-19T04:40:13.531Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:name>BELMONT VISUAL RWY 22L</ns9:name>
+          <ns9:extension>
+            <ns11:ProcedureExtension ns5:id="IAP_TS_EX1_41522875">
+              <ns11:printableVersionNumber>ORIG</ns11:printableVersionNumber>
+              <ns11:legacyControlNumber/>
+            </ns11:ProcedureExtension>
+          </ns9:extension>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41522875">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41522875">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41522875">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41522875">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41522875">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41522875">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41522875">
+                          <ns9:note>Procedure NA except for aircraft equipped with suitable RNAV system with GPS, CRI R-068 unusable</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41522875">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41522875">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP2_41522875">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP2_TS_41522875">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="IAP2_TS_TP_41522875">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:ProcedureAvailability ns5:id="IAP2_TS_TP_AVAIL_41522875">
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_1_41522875">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_1_41522875">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_2_41522875">
+                  <ns9:propertyName>additionalEquipment</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_2_41522875">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:status>USABLE</ns9:status>
+            </ns9:ProcedureAvailability>
+          </ns9:availability>
+          <ns9:annotation>
+            <ns9:Note ns5:id="IAP2_TS_Note_2_41522875">
+              <ns9:propertyName>status</ns9:propertyName>
+              <ns9:purpose>DESCRIPTION</ns9:purpose>
+              <ns9:translatedNote>
+                <ns9:LinguisticNote ns5:id="IAP2_TS_Note_L_2_41522875">
+                  <ns9:note/>
+                </ns9:LinguisticNote>
+              </ns9:translatedNote>
+            </ns9:Note>
+          </ns9:annotation>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Navaid ns5:id="N_1_41522875">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS_1_41522875">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="N_TS_TI_1_1_41522875">
+              <ns5:timePosition>2015-10-19T04:40:13.531Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:type>VOR</ns9:type>
+          <ns9:designator>CRI</ns9:designator>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS2_1_41522875">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="N_TS2_TP_1_41522875">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:NavaidOperationalStatus ns5:id="N_TS2_NOS_1_41522875">
+              <ns9:operationalStatus>OTHER:UNUSABLE</ns9:operationalStatus>
+            </ns9:NavaidOperationalStatus>
+          </ns9:availability>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Navaid>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_41522875">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_41522875">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_41522875">
+              <ns5:timePosition>2015-10-19T04:40:13.531Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:servedCity>
+            <ns9:City ns5:id="Airport_City_1_41522875">
+              <ns9:name>NEW YORK</ns9:name>
+            </ns9:City>
+          </ns9:servedCity>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_41522875">
+              <ns5:pos>40.6397511111111 -73.7789255555556</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns11:AirportHeliportExtension ns5:id="AHE_EVENT_2_41522875">
+              <ns11:stateTerritory>NY</ns11:stateTerritory>
+            </ns11:AirportHeliportExtension>
+          </ns9:extension>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_41522875">
+              <ns12:theEvent ns2:href="#Event_1_41522875"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_41522875">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_41522875">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_41522875">
+              <ns5:beginPosition>2015-10-19T04:34:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-16T04:34:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>807</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_41522875">
+              <ns12:number>8644</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-10-19T04:34:00.000Z</ns12:issued>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201510190434</ns12:effectiveStart>
+              <ns12:effectiveEnd>201604160434EST</ns12:effectiveEnd>
+              <ns12:text>VFP JOHN F KENNEDY INTL, NEW YORK, NY.
+BELMONT VISUAL RWY 22L, ORIG...
+PROCEDURE NA EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-068 UNUSABLE.
+1510190434-1604160434EST</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_41522875">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!FDC 5/8644 JFK VFP JOHN F KENNEDY INTL, NEW YORK, NY.
+BELMONT VISUAL RWY 22L, ORIG...
+PROCEDURE NA EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-068 UNUSABLE.
+1510190434-1604160434EST</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_41522875">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Q) ZNY/QPKXX/V/NBO/A/000/999/4038N07346W025
+A) KJFK
+B) 1510011915
+C) 1603291909EST
+E) VFP JOHN F KENNEDY INTL, NEW YORK, NY.
+BELMONT VISUAL RWY 22L, ORIG...
+PROCEDURE NA EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-068 UNUSABLE.</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_41522875">
+              <ns6:classification>FDC</ns6:classification>
+              <ns6:accountId>FDC</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A7486/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-10-19T04:38:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_41570860">
+  <ns5:boundedBy>
+    <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+      <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+      <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+    </Envelope>
+  </ns5:boundedBy> 
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP_1_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP_TS_1_41570860">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="IAP_TS_TI_1_41570860">
+              <ns5:timePosition>2015-10-26T13:53:26.964Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:name>VOR/DME RWY 22L</ns9:name>
+          <ns9:approachType>VOR_DME</ns9:approachType>
+          <ns9:extension>
+            <ns11:ProcedureExtension ns5:id="IAP_TS_EX1_41570860">
+              <ns11:printableVersionNumber>4D</ns11:printableVersionNumber>
+              <ns11:legacyControlNumber>13138</ns11:legacyControlNumber>
+            </ns11:ProcedureExtension>
+          </ns9:extension>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41570860">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41570860">
+              <ns5:timePosition>2015-10-26T13:53:26.964Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>22L</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41570860"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41570860">
+              <ns12:theEvent ns2:href="#Event_1_41570860"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="Runway_11_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="Runway_TS_11_41570860">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Runway_TS_TI_11_41570860">
+              <ns5:timePosition>2015-10-26T13:53:26.964Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R/22L</ns9:designator>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_11_41570860">
+              <ns12:theEvent ns2:href="#Event_1_41570860"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41570860">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41570860">
+              <ns5:beginPosition>2015-10-26T13:46:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-23T13:43:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41570860">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41570860">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41570860">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41570860">
+                          <ns9:note>s-22L VIS CAT A AND B RVR 4000</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41570860">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41570860">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP2_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP2_TS_41570860">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="IAP2_TS_TP_41570860">
+              <ns5:beginPosition>2015-10-26T13:46:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-23T13:43:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:ProcedureAvailability ns5:id="IAP2_TS_TP_AVAIL_41570860">
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_1_41570860">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_1_41570860">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_2_41570860">
+                  <ns9:propertyName>additionalEquipment</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_2_41570860">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_3_1_41570860">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_Note_L_3_1_41570860">
+                      <ns9:note>NOTE: HELICOPTER VISIBILITY REDUCTION BELOW RVR 4000 NOT AUTHORIZED</ns9:note>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_3_2_41570860">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_Note_L_3_2_41570860">
+                      <ns9:note>NOTE: FOR INOPERATIVE ALSF-2, INCREASE S-22L CAT A/B VISIBILITY TO RVR 5000</ns9:note>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:status>USABLE</ns9:status>
+            </ns9:ProcedureAvailability>
+          </ns9:availability>
+          <ns9:annotation>
+            <ns9:Note ns5:id="IAP2_TS_Note_2_41570860">
+              <ns9:propertyName>status</ns9:propertyName>
+              <ns9:purpose>DESCRIPTION</ns9:purpose>
+              <ns9:translatedNote>
+                <ns9:LinguisticNote ns5:id="IAP2_TS_Note_L_2_41570860">
+                  <ns9:note/>
+                </ns9:LinguisticNote>
+              </ns9:translatedNote>
+            </ns9:Note>
+          </ns9:annotation>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_41570860">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_41570860">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_41570860">
+              <ns5:timePosition>2015-10-26T13:53:26.964Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:servedCity>
+            <ns9:City ns5:id="Airport_City_1_41570860">
+              <ns9:name>NEW YORK</ns9:name>
+            </ns9:City>
+          </ns9:servedCity>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_41570860">
+              <ns5:pos>40.6397511111111 -73.7789255555556</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns11:AirportHeliportExtension ns5:id="AHE_EVENT_2_41570860">
+              <ns11:stateTerritory>NY</ns11:stateTerritory>
+            </ns11:AirportHeliportExtension>
+          </ns9:extension>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_41570860">
+              <ns12:theEvent ns2:href="#Event_1_41570860"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_41570860">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_41570860">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_41570860">
+              <ns5:beginPosition>2015-10-26T13:46:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-23T13:43:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>802</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_41570860">
+              <ns12:number>2524</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-10-26T13:46:00.000Z</ns12:issued>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201510261346</ns12:effectiveStart>
+              <ns12:effectiveEnd>201604231343EST</ns12:effectiveEnd>
+              <ns12:text>IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR/DME RWY 22L, AMDT 4D...
+S-22L VIS CAT A AND B RVR 4000.
+NOTE: HELICOPTER VISIBILITY REDUCTION BELOW RVR 4000 NOT AUTHORIZED.
+NOTE: FOR INOPERATIVE ALSF-2, INCREASE S-22L CAT A/B VISIBILITY TO RVR 5000.
+MSA FROM JFK VOR/DME 270 TO 360 MINIMUM ALTITUDE 2900.
+1510261346-1604231343EST</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_41570860">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!FDC 5/2524 JFK IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR/DME RWY 22L, AMDT 4D...
+S-22L VIS CAT A AND B RVR 4000.
+NOTE: HELICOPTER VISIBILITY REDUCTION BELOW RVR 4000 NOT AUTHORIZED.
+NOTE: FOR INOPERATIVE ALSF-2, INCREASE S-22L CAT A/B VISIBILITY TO RVR 5000.
+MSA FROM JFK VOR/DME 270 TO 360 MINIMUM ALTITUDE 2900.
+1510261346-1604231343EST</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_41570860">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Q) ZNY/QPIXX/I/NBO/A/000/999/4038N07346W025
+A) KJFK
+B) 1510261346
+C) 1604231343EST
+E) IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR/DME RWY 22L, AMDT 4D...
+S-22L VIS CAT A AND B RVR 4000.
+NOTE: HELICOPTER VISIBILITY REDUCTION BELOW RVR 4000 NOT AUTHORIZED.
+NOTE: FOR INOPERATIVE ALSF-2, INCREASE S-22L CAT A/B VISIBILITY TO RVR 5000.
+MSA FROM JFK VOR/DME 270 TO 360 MINIMUM ALTITUDE 2900.</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_41570860">
+              <ns6:classification>FDC</ns6:classification>
+              <ns6:accountId>FDC</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A7750/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-10-26T13:49:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_41550560">
+  <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP_1_41550560">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP_TS_1_41550560">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="IAP_TS_TI_1_41550560">
+              <ns5:timePosition>2015-10-22T16:17:27.515Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:name>ILS OR LOC RWY 31R</ns9:name>
+          <ns9:approachType>ILS</ns9:approachType>
+          <ns9:extension>
+            <ns11:ProcedureExtension ns5:id="IAP_TS_EX1_41550560">
+              <ns11:printableVersionNumber>15D</ns11:printableVersionNumber>
+              <ns11:legacyControlNumber>13144</ns11:legacyControlNumber>
+            </ns11:ProcedureExtension>
+          </ns9:extension>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41550560">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41550560">
+              <ns5:timePosition>2015-10-22T16:17:27.515Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>31R</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41550560"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41550560">
+              <ns12:theEvent ns2:href="#Event_1_41550560"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="Runway_11_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="Runway_TS_11_41550560">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Runway_TS_TI_11_41550560">
+              <ns5:timePosition>2015-10-22T16:17:27.515Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>13L/31R</ns9:designator>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_11_41550560">
+              <ns12:theEvent ns2:href="#Event_1_41550560"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41550560">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41550560">
+              <ns5:beginPosition>2015-10-22T16:04:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T16:04:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41550560">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41550560">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41550560">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41550560">
+                          <ns9:note>Missed Approach: Climb to 1800 then climbing left turn to 4000 on LGA VOR/DME R-207 to MOVFA INT/LGA 34.31 DME and hold, CRI R-047 to R-175 unusable</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41550560">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41550560">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP2_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP2_TS_41550560">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="IAP2_TS_TP_41550560">
+              <ns5:beginPosition>2015-10-22T16:04:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T16:04:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:ProcedureAvailability ns5:id="IAP2_TS_TP_AVAIL_41550560">
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_1_41550560">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_1_41550560">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_2_41550560">
+                  <ns9:propertyName>additionalEquipment</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_2_41550560">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:status>USABLE</ns9:status>
+            </ns9:ProcedureAvailability>
+          </ns9:availability>
+          <ns9:annotation>
+            <ns9:Note ns5:id="IAP2_TS_Note_2_41550560">
+              <ns9:propertyName>status</ns9:propertyName>
+              <ns9:purpose>DESCRIPTION</ns9:purpose>
+              <ns9:translatedNote>
+                <ns9:LinguisticNote ns5:id="IAP2_TS_Note_L_2_41550560">
+                  <ns9:note/>
+                </ns9:LinguisticNote>
+              </ns9:translatedNote>
+            </ns9:Note>
+          </ns9:annotation>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Navaid ns5:id="N_1_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS_1_41550560">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="N_TS_TI_1_1_41550560">
+              <ns5:timePosition>2015-10-22T16:17:27.515Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:type>VOR</ns9:type>
+          <ns9:designator>CRI</ns9:designator>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS2_1_41550560">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="N_TS2_TP_1_41550560">
+              <ns5:beginPosition>2015-10-22T16:04:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T16:04:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:NavaidOperationalStatus ns5:id="N_TS2_NOS_1_41550560">
+              <ns9:operationalStatus>OTHER:UNUSABLE</ns9:operationalStatus>
+            </ns9:NavaidOperationalStatus>
+          </ns9:availability>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Navaid>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_41550560">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_41550560">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_41550560">
+              <ns5:timePosition>2015-10-22T16:17:27.515Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:servedCity>
+            <ns9:City ns5:id="Airport_City_1_41550560">
+              <ns9:name>NEW YORK</ns9:name>
+            </ns9:City>
+          </ns9:servedCity>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_41550560">
+              <ns5:pos>40.6397511111111 -73.7789255555556</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns11:AirportHeliportExtension ns5:id="AHE_EVENT_2_41550560">
+              <ns11:stateTerritory>NY</ns11:stateTerritory>
+            </ns11:AirportHeliportExtension>
+          </ns9:extension>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_41550560">
+              <ns12:theEvent ns2:href="#Event_1_41550560"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_41550560">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_41550560">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_41550560">
+              <ns5:beginPosition>2015-10-22T16:04:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T16:04:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>802</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_41550560">
+              <ns12:number>1299</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-10-22T16:04:00.000Z</ns12:issued>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201510221604</ns12:effectiveStart>
+              <ns12:effectiveEnd>201604191604EST</ns12:effectiveEnd>
+              <ns12:text>IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+ILS OR LOC RWY 31R, AMDT 15D...
+MISSED APPROACH: CLIMB TO 1800 THEN CLIMBING LEFT TURN TO 4000 ON LGA VOR/DME R-207 TO MOVFA INT/LGA 34.31 DME AND HOLD, CRI R-047 TO R-175 UNUSABLE.
+1510221604-1604191604EST</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_41550560">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!FDC 5/1299 JFK IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+ILS OR LOC RWY 31R, AMDT 15D...
+MISSED APPROACH: CLIMB TO 1800 THEN CLIMBING LEFT TURN TO 4000 ON LGA VOR/DME R-207 TO MOVFA INT/LGA 34.31 DME AND HOLD, CRI R-047 TO R-175 UNUSABLE.
+1510221604-1604191604EST</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_41550560">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Q) ZNY/QPIXX/I/NBO/A/000/999/4038N07346W025
+A) KJFK
+B) 1510221603
+C) 1604191603EST
+E) IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+ILS OR LOC RWY 31R, AMDT 15D...
+MISSED APPROACH: CLIMB TO 1800 THEN CLIMBING LEFT TURN TO 4000 ON LGA VOR/DME R-207 TO MOVFA INT/LGA 34.31 DME AND HOLD, CRI R-047 TO R-175 UNUSABLE.</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_41550560">
+              <ns6:classification>FDC</ns6:classification>
+              <ns6:accountId>FDC</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A7637/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-10-22T16:13:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_41549972">
+  <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP_1_41549972">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy> 
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP_TS_1_41549972">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="IAP_TS_TI_1_41549972">
+              <ns5:timePosition>2015-10-22T15:23:27.123Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:name>VOR RWY 4L</ns9:name>
+          <ns9:approachType>VOR</ns9:approachType>
+          <ns9:extension>
+            <ns11:ProcedureExtension ns5:id="IAP_TS_EX1_41549972">
+              <ns11:printableVersionNumber>1</ns11:printableVersionNumber>
+              <ns11:legacyControlNumber>13136</ns11:legacyControlNumber>
+            </ns11:ProcedureExtension>
+          </ns9:extension>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41549972">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41549972">
+              <ns5:timePosition>2015-10-22T15:23:27.123Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04L</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41549972"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41549972">
+              <ns12:theEvent ns2:href="#Event_1_41549972"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="Runway_11_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="Runway_TS_11_41549972">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Runway_TS_TI_11_41549972">
+              <ns5:timePosition>2015-10-22T15:23:27.123Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04L/22R</ns9:designator>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_11_41549972">
+              <ns12:theEvent ns2:href="#Event_1_41549972"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41549972">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41549972">
+              <ns5:beginPosition>2015-10-22T15:13:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T15:13:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41549972">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41549972">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41549972">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41549972">
+                          <ns9:note>DME or radar REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-153 UNUSABLE</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41549972">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41549972">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:InstrumentApproachProcedure ns5:id="IAP2_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:InstrumentApproachProcedureTimeSlice ns5:id="IAP2_TS_41549972">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="IAP2_TS_TP_41549972">
+              <ns5:beginPosition>2015-10-22T15:13:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T15:13:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:ProcedureAvailability ns5:id="IAP2_TS_TP_AVAIL_41549972">
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_1_41549972">
+                  <ns9:propertyName>status</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_1_41549972">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:annotation>
+                <ns9:Note ns5:id="IAP2_TS_TP_AVAIL_Note_2_41549972">
+                  <ns9:propertyName>additionalEquipment</ns9:propertyName>
+                  <ns9:purpose>DESCRIPTION</ns9:purpose>
+                  <ns9:translatedNote>
+                    <ns9:LinguisticNote ns5:id="IAP2_TS_TP_AVAIL_L_2_41549972">
+                      <ns9:note/>
+                    </ns9:LinguisticNote>
+                  </ns9:translatedNote>
+                </ns9:Note>
+              </ns9:annotation>
+              <ns9:status>USABLE</ns9:status>
+            </ns9:ProcedureAvailability>
+          </ns9:availability>
+          <ns9:annotation>
+            <ns9:Note ns5:id="IAP2_TS_Note_2_41549972">
+              <ns9:propertyName>status</ns9:propertyName>
+              <ns9:purpose>DESCRIPTION</ns9:purpose>
+              <ns9:translatedNote>
+                <ns9:LinguisticNote ns5:id="IAP2_TS_Note_L_2_41549972">
+                  <ns9:note/>
+                </ns9:LinguisticNote>
+              </ns9:translatedNote>
+            </ns9:Note>
+          </ns9:annotation>
+        </ns9:InstrumentApproachProcedureTimeSlice>
+      </ns9:timeSlice>
+    </ns9:InstrumentApproachProcedure>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Navaid ns5:id="N_1_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS_1_41549972">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="N_TS_TI_1_1_41549972">
+              <ns5:timePosition>2015-10-22T15:23:27.123Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:type>VOR</ns9:type>
+          <ns9:designator>CRI</ns9:designator>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:NavaidTimeSlice ns5:id="N_TS2_1_41549972">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="N_TS2_TP_1_41549972">
+              <ns5:beginPosition>2015-10-22T15:13:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T15:13:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:availability>
+            <ns9:NavaidOperationalStatus ns5:id="N_TS2_NOS_1_41549972">
+              <ns9:operationalStatus>OTHER:UNUSABLE</ns9:operationalStatus>
+            </ns9:NavaidOperationalStatus>
+          </ns9:availability>
+        </ns9:NavaidTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Navaid>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_41549972">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+          <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+        </Envelope>
+      </ns5:boundedBy> 
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_41549972">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_41549972">
+              <ns5:timePosition>2015-10-22T15:23:27.123Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:servedCity>
+            <ns9:City ns5:id="Airport_City_1_41549972">
+              <ns9:name>NEW YORK</ns9:name>
+            </ns9:City>
+          </ns9:servedCity>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_41549972">
+              <ns5:pos>40.6397511111111 -73.7789255555556</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns11:AirportHeliportExtension ns5:id="AHE_EVENT_2_41549972">
+              <ns11:stateTerritory>NY</ns11:stateTerritory>
+            </ns11:AirportHeliportExtension>
+          </ns9:extension>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_41549972">
+              <ns12:theEvent ns2:href="#Event_1_41549972"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_41549972">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_41549972">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_41549972">
+              <ns5:beginPosition>2015-10-22T15:13:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2016-04-19T15:13:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>802</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_41549972">
+              <ns12:number>1265</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-10-22T15:13:00.000Z</ns12:issued>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201510221513</ns12:effectiveStart>
+              <ns12:effectiveEnd>201604191513EST</ns12:effectiveEnd>
+              <ns12:text>IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4L, AMDT 1...
+DME OR RADAR REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-153 UNUSABLE.
+1510221513-1604191513EST</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_41549972">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!FDC 5/1265 JFK IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4L, AMDT 1...
+DME OR RADAR REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-153 UNUSABLE.
+1510221513-1604191513EST</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_41549972">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Q) ZNY/QPIXX/I/NBO/A/000/999/4038N07346W025
+A) KJFK
+B) 1510221513
+C) 1604191512EST
+E) IAP JOHN F KENNEDY INTL, NEW YORK, NY.
+VOR RWY 4L, AMDT 1...
+DME OR RADAR REQUIRED EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS, CRI R-153 UNUSABLE.</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_41549972">
+              <ns6:classification>FDC</ns6:classification>
+              <ns6:accountId>FDC</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A7634/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-10-22T15:21:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_40409610">
+  <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <ns13:hasMember>
+    <ns9:ArrestingGear ns5:id="AG01_40409610">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59477382450712 -73.83800755272438</lowerCorner>
+          <upperCorner>40.684825823291625 -73.7197924472756</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:ArrestingGearTimeSlice ns5:id="AG01_TS01_40409610">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="AG01_TS01_TI01_40409610">
+              <ns5:timePosition>2015-05-05T17:21:36.223Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:engageDevice>EMAS</ns9:engageDevice>
+          <ns9:runwayDirection ns2:href="#RWY01_40409610"/>
+        </ns9:ArrestingGearTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:ArrestingGearTimeSlice ns5:id="AG01_TS02_40409610">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="AG01_TS02_TP_1_40409610">
+              <ns5:beginPosition>2015-05-05T17:10:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown"/>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:status>OTHER:NON_STD</ns9:status>
+          <ns9:extension>
+            <ns12:ArrestingGearExtension ns5:id="AGE_EVENT_1_40409610">
+              <ns12:theEvent ns2:href="#Event_1_40409610"/>
+            </ns12:ArrestingGearExtension>
+          </ns9:extension>
+        </ns9:ArrestingGearTimeSlice>
+      </ns9:timeSlice>
+    </ns9:ArrestingGear>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR01_40409610">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS01_40409610">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_40409610">
+              <ns5:timePosition>2015-05-05T17:21:36.223Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>22L</ns9:designator>
+          <ns9:usedRunway ns2:href="#RWY01_40409610"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_1_40409610">
+              <ns12:theEvent ns2:href="#Event_1_40409610"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="RWY01_40409610">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="RWY01_TS01_40409610">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWY01_TS01_TI01_40409610">
+              <ns5:timePosition>2015-05-05T17:21:36.223Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R/22L</ns9:designator>
+          <ns9:associatedAirportHeliport ns2:href="#Airport_1_40409610"/>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_1_40409610">
+              <ns12:theEvent ns2:href="#Event_1_40409610"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayElement ns5:id="RE1_40409610">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.62528548806024 -73.77065722175405</lowerCorner>
+          <upperCorner>40.6453759411985 -73.75455355349962</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:RunwayElementTimeSlice ns5:id="RE01_TS1_40409610">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RE_TI1_40409610">
+              <ns5:timePosition>2015-05-05T17:21:36.223Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:associatedRunway ns2:href="#RWY01_40409610"/>
+          <ns9:extent>
+            <ns9:ElevatedSurface srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="ES1_40409610">
+              <ns5:patches>
+                <ns5:PolygonPatch>
+                  <ns5:exterior>
+                    <ns5:LinearRing>
+                      <ns5:posList>40.625565622256325 -73.77065722175405 40.62528548806024 -73.77003722406043 40.64509572467323 -73.75455355349962 40.6453759411985 -73.75517367009414 40.625565622256325 -73.77065722175405</ns5:posList>
+                    </ns5:LinearRing>
+                  </ns5:exterior>
+                </ns5:PolygonPatch>
+              </ns5:patches>
+            </ns9:ElevatedSurface>
+          </ns9:extent>
+          <ns9:extension>
+            <ns12:RunwayElementExtension ns5:id="REE_EVENT_1_40409610">
+              <ns12:theEvent ns2:href="#Event_1_40409610"/>
+            </ns12:RunwayElementExtension>
+          </ns9:extension>
+        </ns9:RunwayElementTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayElement>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_40409610">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59477382450712 -73.83800755272438</lowerCorner>
+          <upperCorner>40.684825823291625 -73.7197924472756</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_40409610">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_40409610">
+              <ns5:timePosition>2015-05-05T17:21:36.223Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_40409610">
+              <ns5:pos>40.6398 -73.7789</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_40409610">
+              <ns12:theEvent ns2:href="#Event_1_40409610"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_40409610">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_40409610">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_40409610">
+              <ns5:beginPosition>2015-05-05T17:10:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown"/>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>461</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_40409610">
+              <ns12:number>33</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-05-05T17:10:00.000Z</ns12:issued>
+              <ns12:affectedFIR>ZNY</ns12:affectedFIR>
+              <ns12:selectionCode>QMMXX</ns12:selectionCode>
+              <ns12:traffic>IV</ns12:traffic>
+              <ns12:purpose>NBO</ns12:purpose>
+              <ns12:scope>A</ns12:scope>
+              <ns12:minimumFL>000</ns12:minimumFL>
+              <ns12:maximumFL>999</ns12:maximumFL>
+              <ns12:coordinates>4038N07346W</ns12:coordinates>
+              <ns12:radius>5</ns12:radius>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201505051710</ns12:effectiveStart>
+              <ns12:effectiveEnd>PERM</ns12:effectiveEnd>
+              <ns12:text>RWY 22L ENGINEERED MATERIALS ARRESTING SYSTEM NOT STD</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_40409610">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!JFK 05/033 JFK RWY 22L ENGINEERED MATERIALS ARRESTING SYSTEM NOT STD 1505051710-PERM</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_40409610">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">&lt;p align="left"&gt; 05/033 NOTAMN&lt;br/&gt; 
+&lt;b&gt;Q) &lt;/b&gt;ZNY/QMMXX/IV/NBO/A/000/999/4038N07346W005&lt;br/&gt; 
+&lt;b&gt;A) &lt;/b&gt;KJFK&lt;br/&gt; 
+&lt;b&gt;B) &lt;/b&gt;1505051710&lt;br/&gt; 
+&lt;b&gt;C) &lt;/b&gt;PERM&lt;br/&gt; 
+
+&lt;b&gt;E) &lt;/b&gt;RWY 22L ENGINEERED MATERIALS ARRESTING SYSTEM NON STD &lt;br/&gt; &lt;/p&gt;</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_40409610">
+              <ns6:classification>DOM</ns6:classification>
+              <ns6:accountId>JFK</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A4415/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-05-05T17:18:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_39611670">
+  <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <ns13:hasMember>
+    <ns9:ArrestingGear ns5:id="AG01_39611670">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59477382450712 -73.83800755272438</lowerCorner>
+          <upperCorner>40.684825823291625 -73.7197924472756</upperCorner>
+        </Envelope>
+      </ns5:boundedBy> 
+      <ns9:timeSlice>
+        <ns9:ArrestingGearTimeSlice ns5:id="AG01_TS01_39611670">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="AG01_TS01_TI01_39611670">
+              <ns5:timePosition>2015-01-21T22:42:03.920Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:engageDevice>EMAS</ns9:engageDevice>
+          <ns9:runwayDirection ns2:href="#RWY01_39611670"/>
+        </ns9:ArrestingGearTimeSlice>
+      </ns9:timeSlice>
+      <ns9:timeSlice>
+        <ns9:ArrestingGearTimeSlice ns5:id="AG01_TS02_39611670">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="AG01_TS02_TP_1_39611670">
+              <ns5:beginPosition>2015-01-21T22:28:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown"/>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:status>OTHER:NON_STD</ns9:status>
+          <ns9:extension>
+            <ns12:ArrestingGearExtension ns5:id="AGE_EVENT_1_39611670">
+              <ns12:theEvent ns2:href="#Event_1_39611670"/>
+            </ns12:ArrestingGearExtension>
+          </ns9:extension>
+        </ns9:ArrestingGearTimeSlice>
+      </ns9:timeSlice>
+    </ns9:ArrestingGear>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR01_39611670">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS01_39611670">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_39611670">
+              <ns5:timePosition>2015-01-21T22:42:03.920Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>4R</ns9:designator>
+          <ns9:usedRunway ns2:href="#RWY01_39611670"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_1_39611670">
+              <ns12:theEvent ns2:href="#Event_1_39611670"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:Runway ns5:id="RWY01_39611670">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayTimeSlice ns5:id="RWY01_TS01_39611670">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWY01_TS01_TI01_39611670">
+              <ns5:timePosition>2015-01-21T22:42:03.920Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R/22L</ns9:designator>
+          <ns9:associatedAirportHeliport ns2:href="#Airport_1_39611670"/>
+          <ns9:extension>
+            <ns12:RunwayExtension ns5:id="RE_EVENT_1_39611670">
+              <ns12:theEvent ns2:href="#Event_1_39611670"/>
+            </ns12:RunwayExtension>
+          </ns9:extension>
+        </ns9:RunwayTimeSlice>
+      </ns9:timeSlice>
+    </ns9:Runway>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:RunwayElement ns5:id="RE1_39611670">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.6252854880603 -73.7706572217539</lowerCorner>
+          <upperCorner>40.6453759411985 -73.7545535534999</upperCorner></Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:RunwayElementTimeSlice ns5:id="RE01_TS1_39611670">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RE_TI1_39611670">
+              <ns5:timePosition>2015-01-21T22:42:03.920Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:associatedRunway ns2:href="#RWY01_39611670"/>
+          <ns9:extent>
+            <ns9:ElevatedSurface srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="ES1_39611670">
+              <ns5:patches>
+                <ns5:PolygonPatch>
+                  <ns5:exterior>
+                    <ns5:LinearRing>
+                      <ns5:posList>40.6255656222564 -73.7706572217539 40.6252854880603 -73.7700372240602 40.6450957246732 -73.7545535534999 40.6453759411985 -73.7551736700944 40.6255656222564 -73.7706572217539</ns5:posList>
+                    </ns5:LinearRing>
+                  </ns5:exterior>
+                </ns5:PolygonPatch>
+              </ns5:patches>
+            </ns9:ElevatedSurface>
+          </ns9:extent>
+          <ns9:extension>
+            <ns12:RunwayElementExtension ns5:id="REE_EVENT_1_39611670">
+              <ns12:theEvent ns2:href="#Event_1_39611670"/>
+            </ns12:RunwayElementExtension>
+          </ns9:extension>
+        </ns9:RunwayElementTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayElement>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:AirportHeliport ns5:id="Airport_1_39611670">
+      <ns5:boundedBy>
+        <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+          <lowerCorner>40.59477382450712 -73.83800755272438</lowerCorner>
+          <upperCorner>40.684825823291625 -73.7197924472756</upperCorner>
+        </Envelope>
+      </ns5:boundedBy>
+      <ns9:timeSlice>
+        <ns9:AirportHeliportTimeSlice ns5:id="Airport_TS_1_39611670">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="Airport_TS_TI_1_39611670">
+              <ns5:timePosition>2015-01-21T22:42:03.920Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>JFK</ns9:designator>
+          <ns9:name>JOHN F KENNEDY INTL</ns9:name>
+          <ns9:locationIndicatorICAO>KJFK</ns9:locationIndicatorICAO>
+          <ns9:ARP>
+            <ns9:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_39611670">
+              <ns5:pos>40.6398 -73.7789</ns5:pos>
+            </ns9:ElevatedPoint>
+          </ns9:ARP>
+          <ns9:extension>
+            <ns12:AirportHeliportExtension ns5:id="AHE_EVENT_1_39611670">
+              <ns12:theEvent ns2:href="#Event_1_39611670"/>
+            </ns12:AirportHeliportExtension>
+          </ns9:extension>
+        </ns9:AirportHeliportTimeSlice>
+      </ns9:timeSlice>
+    </ns9:AirportHeliport>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns12:Event ns5:id="Event_1_39611670">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns12:timeSlice>
+        <ns12:EventTimeSlice ns5:id="Event_TS_1_39611670">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="Event_TS_TP_1_39611670">
+              <ns5:beginPosition>2015-01-21T22:28:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown"/>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>BASELINE</ns9:interpretation>
+          <ns12:scenario>461</ns12:scenario>
+          <ns12:textNOTAM>
+            <ns12:NOTAM ns5:id="NOTAM_1_39611670">
+              <ns12:number>376</ns12:number>
+              <ns12:year>2015</ns12:year>
+              <ns12:type>N</ns12:type>
+              <ns12:issued>2015-01-21T22:29:00.000Z</ns12:issued>
+              <ns12:affectedFIR>ZNY</ns12:affectedFIR>
+              <ns12:selectionCode>QMMXX</ns12:selectionCode>
+              <ns12:traffic>IV</ns12:traffic>
+              <ns12:purpose>NBO</ns12:purpose>
+              <ns12:scope>A</ns12:scope>
+              <ns12:minimumFL>000</ns12:minimumFL>
+              <ns12:maximumFL>999</ns12:maximumFL>
+              <ns12:coordinates>4038N07346W</ns12:coordinates>
+              <ns12:radius>5</ns12:radius>
+              <ns12:location>JFK</ns12:location>
+              <ns12:effectiveStart>201501212228</ns12:effectiveStart>
+              <ns12:effectiveEnd>PERM</ns12:effectiveEnd>
+              <ns12:text>RWY 4R ENGINEERED MATERIALS ARRESTING SYSTEM NOT STD</ns12:text>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT01_39611670">
+                  <ns12:type>LOCAL_FORMAT</ns12:type>
+                  <ns12:simpleText>!JFK 01/376 JFK RWY 4R ENGINEERED MATERIALS ARRESTING SYSTEM NOT STD 1501212228-PERM</ns12:simpleText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+              <ns12:translation>
+                <ns12:NOTAMTranslation ns5:id="NT02_39611670">
+                  <ns12:type>OTHER:ICAO</ns12:type>
+                  <ns12:formattedText>
+                    <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">&lt;p align="left"&gt; 01/376 NOTAMN&lt;br/&gt; 
+&lt;b&gt;Q) &lt;/b&gt;ZNY/QMMXX/IV/NBO/A/000/999/4038N07346W005&lt;br/&gt; 
+&lt;b&gt;A) &lt;/b&gt;KJFK&lt;br/&gt; 
+&lt;b&gt;B) &lt;/b&gt;1501212228&lt;br/&gt; 
+&lt;b&gt;C) &lt;/b&gt;PERM&lt;br/&gt; 
+
+&lt;b&gt;E) &lt;/b&gt;RWY 4R ENGINEERED MATERIALS ARRESTING SYSTEM NON STD &lt;br/&gt; &lt;/p&gt;</html:div>
+                  </ns12:formattedText>
+                </ns12:NOTAMTranslation>
+              </ns12:translation>
+            </ns12:NOTAM>
+          </ns12:textNOTAM>
+          <ns12:extension>
+            <ns6:EventExtension ns5:id="ext_01_39611670">
+              <ns6:classification>DOM</ns6:classification>
+              <ns6:accountId>JFK</ns6:accountId>
+              <ns6:xoveraccountID>KJFK</ns6:xoveraccountID>
+              <ns6:xovernotamID>A0634/15</ns6:xovernotamID>
+              <ns6:airportname>JOHN F KENNEDY INTL</ns6:airportname>
+              <ns6:lastUpdated>2015-01-21T22:38:00.000Z</ns6:lastUpdated>
+              <ns6:icaoLocation>KJFK</ns6:icaoLocation>
+            </ns6:EventExtension>
+          </ns12:extension>
+        </ns12:EventTimeSlice>
+      </ns12:timeSlice>
+    </ns12:Event>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+</entry>
+</Root>

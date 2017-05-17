@@ -1,0 +1,18 @@
+package main;
+
+import java.sql.Date;
+import java.util.Calendar;
+
+import jollyday.JollydayHelper;
+
+public class Main {
+
+	public static void main(String[] args) {
+		JollydayHelper.getHolidays(null, null, "at");
+		
+		Calendar c = Calendar.getInstance();
+		c.set(2017, 0, 1);
+		System.out.println(JollydayHelper.isHoliday(c.getTime(), "at"));
+		}
+
+}

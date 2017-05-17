@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jollyday-0.5.1.jar&apos; to &apos;JollydayWrapper&apos;&#x0A;- Original project: &apos;SemNotamBaseX&apos;&#x0A;- Destination element: &apos;JollydayWrapper&apos;&#x0A;- Original element: &apos;jollyday-0.5.1.jar&apos;" description="Copy file" destination="=JollydayWrapper" element1="jollyday-0.5.1.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1494489563311" units="0" version="1.0"/>
+</session>

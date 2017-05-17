@@ -1,0 +1,9 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		/Users/Andreas/.m2/repository/org/apache/logging/log4j/log4j-api/2.3/log4j-api-2.3.jar
+		/Users/Andreas/.m2/repository/org/basex/basex/8.5.3/basex-8.5.3.jar
+	}
+}
+

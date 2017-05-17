@@ -1,0 +1,126 @@
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="FNS_ID_36119438"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>OAK</ns6:designator>
+                           <ns6:name>METROPOLITAN OAKLAND INTL</ns6:name>
+                           <ns6:locationIndicatorICAO>KOAK</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>37.7213 -122.2207</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2014-03-31T07:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2015-01-05T14:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>31-03</ns6:startDate>
+                                       <ns6:endDate>05-01</ns6:endDate>
+                                       <ns6:day>MON</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>14:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               <ns13:hasMember>
+                  <ns10:Event ns5:id="Event_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns10:timeSlice>
+                        <ns10:EventTimeSlice ns5:id="Event_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="Event_TS_TP_1_36119438">
+                                 <ns5:beginPosition>2014-03-31T07:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2015-01-05T14:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>BASELINE</ns6:interpretation>
+                           <ns10:scenario>302</ns10:scenario>
+                           <ns10:textNOTAM>
+                              <ns10:NOTAM ns5:id="NOTAM_1_36119438">
+                                 <ns10:series>A</ns10:series>
+                                 <ns10:number>258</ns10:number>
+                                 <ns10:year>2014</ns10:year>
+                                 <ns10:type>N</ns10:type>
+                                 <ns10:issued>2014-03-28T18:48:00.000Z</ns10:issued>
+                                 <ns10:affectedFIR>KOAK</ns10:affectedFIR>
+                                 <ns10:selectionCode>QFAHW</ns10:selectionCode>
+                                 <ns10:traffic>IV</ns10:traffic>
+                                 <ns10:purpose>NBO</ns10:purpose>
+                                 <ns10:scope>A</ns10:scope>
+                                 <ns10:minimumFL>000</ns10:minimumFL>
+                                 <ns10:maximumFL>999</ns10:maximumFL>
+                                 <ns10:coordinates>3743N12213W</ns10:coordinates>
+                                 <ns10:radius>5</ns10:radius>
+                                 <ns10:location>OAK</ns10:location>
+                                 <ns10:effectiveStart>201403310700</ns10:effectiveStart>
+                                 <ns10:effectiveEnd>201501051400</ns10:effectiveEnd>
+                                 <ns10:schedule>MON 07:00-14:00</ns10:schedule>
+                                 <ns10:text>AD ALL SURFACES WORK IN PROGRESS MAINT MON 0700-1400</ns10:text>
+                                 <ns10:translation>
+                                    <ns10:NOTAMTranslation ns5:id="NT01_36119438">
+                                       <ns10:type>LOCAL_FORMAT</ns10:type>
+                                       <ns10:simpleText>!OAK 03/258 OAK AD ALL SURFACES WORK IN PROGRESS MAINT MON 0700-1400 1403310700-1501051400</ns10:simpleText>
+                                    </ns10:NOTAMTranslation>
+                                 </ns10:translation>
+                                 <ns10:translation>
+                                    <ns10:NOTAMTranslation ns5:id="NT02_36119438">
+                                       <ns10:type>OTHER:ICAO</ns10:type>
+                                       <ns10:formattedText>
+                                          <html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.aixm.aero/schema/5.1/message" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:event="http://www.aixm.aero/schema/5.1/event" xmlns:fns="urn:us.gov.dot.faa.aim.fns" xmlns:fnse="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><![CDATA[<P align=left>03/258 NOTAMN<BR><B>Q) </B>ZOA/QFAHW/IV/NBO/A/000/999/3743N12213W005<BR><B>A) </B>KOAK<BR><B>B) </B>1403310700<BR><B>C) </B>1501051400<BR><B>D)</B> MON 0700-1400 <BR><B>E) </B>AD ALL SURFACES WORK IN PROGRESS MAINT <BR></P>]]></html:div>
+                                       </ns10:formattedText>
+                                    </ns10:NOTAMTranslation>
+                                 </ns10:translation>
+                              </ns10:NOTAM>
+                           </ns10:textNOTAM>
+                           <ns10:extension>
+                              <ns11:EventExtension ns5:id="ext_01_36119438">
+                                 <ns11:classification>DOM</ns11:classification>
+                                 <ns11:accountId>OAK</ns11:accountId>
+                                 <ns11:airportname>METROPOLITAN OAKLAND INTL</ns11:airportname>
+                                 <ns11:lastUpdated>2014-03-28T18:48:00.000Z</ns11:lastUpdated>
+                                 <ns11:icaoLocation>KOAK</ns11:icaoLocation>
+                              </ns11:EventExtension>
+                           </ns10:extension>
+                        </ns10:EventTimeSlice>
+                     </ns10:timeSlice>
+                  </ns10:Event>
+               </ns13:hasMember>
+            </ns13:AIXMBasicMessage>
