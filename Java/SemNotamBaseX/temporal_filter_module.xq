@@ -100,7 +100,7 @@ as element()*
     </timeperiod>
     else ()
 )
-else if ($timesheet/*:day = "HOL")
+else if ($timesheet/*:day = "HOL" and dke:is-holiday($d,"at"))
 then ()
 else ()
 };
@@ -128,8 +128,8 @@ declare function dke:weekday-from-datetime($datetime as xs:dateTime) as xs:strin
   
 };
 
-declare function dke:is-holiday($date as xs:date) as xs:boolean
+declare function dke:is-holiday($date as xs:date,$country as xs:string) as xs:boolean
 {
-  holiday:isHoliday("2017-01-01","at")
+  holiday:isHoliday(xs:string($date),$country)
 };
 
