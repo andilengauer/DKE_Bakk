@@ -8,7 +8,12 @@ import java.util.Iterator;
 import java.util.Set;
 
 import de.jollyday.Holiday;
+import de.jollyday.HolidayCalendar;
 import de.jollyday.HolidayManager;
+import de.jollyday.ManagerParameter;
+import de.jollyday.ManagerParameters;
+import de.jollyday.config.HolidayType;
+import de.jollyday.config.Holidays;
 
 
 public class JollydayHelper {
@@ -18,6 +23,17 @@ JollydayHelper.getHolidays(null, null, "at");
 		
 		Calendar c = Calendar.getInstance();
 		c.set(2017, 0, 1);
+		Set<String> codes = HolidayManager.getSupportedCalendarCodes();
+		for(String s: codes)
+			System.out.println(s);
+		System.out.println(HolidayCalendar.values()[0]);
+		ManagerParameters.create("at");
+		ManagerParameter p = ManagerParameters.create("us");
+		Set<Holiday> holidays = HolidayManager.getInstance(p).getHolidays(2017);
+		for(Holiday h :holidays)
+		{
+			System.out.println( h.getDate().toString() + ": " + h.getDescription());
+		}
 		System.out.println(JollydayHelper.isHoliday("2017-01-01", "ny"));
 	}
 	

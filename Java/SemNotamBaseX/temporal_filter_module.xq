@@ -9,7 +9,7 @@ import module namespace holiday = "java:jollyday.JollydayHelper";
   1-filter by validTime
   2-filter by activeTime additionally
 :)
-declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granularity as xs:integer) as element()*
+declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granularity as xs:integer) as element()
 {
   
   let $db := db:open("Herucles")
@@ -19,8 +19,8 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
   let $beginTime := xs:dateTime($poi//*:beginPosition/text())
   let $endTime := xs:dateTime($poi//*:endPosition/text())
   
-  let $beginTime := xs:dateTime('2014-06-15T13:04:00.000Z')
-  let $endTime := xs:dateTime('2014-07-23T16:04:00.000Z')
+  let $beginTime := xs:dateTime('2017-05-22T14:04:00.000Z')
+  let $endTime := xs:dateTime('2017-05-22T17:04:00.000Z')
   
   let $filtered := trace(dke:filter-with-validTime($messages,$beginTime,$endTime),'filterValid')
   let $result :=
@@ -53,57 +53,90 @@ as element()* {
     for $t in $temp//*:timeInterval
     let $activetimes := dke:resolve-timesheet($t//*:Timesheet, $beginTime, $endTime)
     return 
-      if(empty($activetimes)) then $m/@*:id
-      else
-        for $activetime in $activetimes
-        where $activetime/begin <= $endTime and $activetime/end >= $beginTime
-        return $m/@*:id
+      for $activetime in $activetimes
+      where $activetime/begin <= $endTime and $activetime/end >= $beginTime
+      return $m/@*:id
   
   
   for $id at $pos in distinct-values($ids)
   return $messages[@*:id = $id]
 };
 
-declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs:dateTime, $endTime as xs:dateTime)
-as element()*
+declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs:dateTime, $endTime as xs:dateTime) as element()*
 {
-  let $weekdays := ('MON','TUE','WED','THU','FRI','SAT','SUN')
+  let $weekdays := ('SUN','MON','TUE','WED','THU','FRI','SAT')
   
   let $begin := xs:date(substring-before(xs:string($beginTime),'T'))
   let $end := xs:date(substring-before(xs:string($endTime),'T'))
-  
+
+  let $starttime := xs:time(concat($timesheet/*:startTime,':00Z'))
+  let $endtime := xs:time(concat($timesheet/*:endTime,':00Z'))
+  let $dayoverlap := $endtime <= $starttime
+    
   let $diff := days-from-duration($end - $begin)
 
   let $dates := 
+  (
+    (: add prev day to dates for day overlapping times :)
+    if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else (),
     for $i in ( 0 to $diff)
-    return $begin + xs:dayTimeDuration(concat('P',$i,'D'))
+    return dke:add-days-to-date($begin,$i)
+  )
   
-  let $starttime := xs:time(concat($timesheet/*:startTime,':00'))
-  let $endtime := xs:time(concat($timesheet/*:endTime,':00'))
+
   
   for $d in $dates
-  return 
-  if ($timesheet/*:day = 'ANY' or $weekdays[functx:day-of-week($d)+1] = $timesheet/*:day)
-  then(
-    let $pbegin := fn:dateTime($d,$starttime)
-    let $pend := fn:dateTime($d,$endtime)
-    return 
+  let $pbegin := fn:dateTime($d,$starttime)
+  let $pend := 
+    if($dayoverlap) then (fn:dateTime(dke:add-days-to-date($d,1),$endtime)) 
+    else fn:dateTime($d,$endtime)
+    
+  return
+  if ($timesheet/*:day = 'ANY')
+  then (
     if($pend >= $beginTime)
     then
-    <timeperiod>
-      <begin>
-      {$pbegin}
-      </begin>
-      <end>
-      {$pend}
-      </end>
-    </timeperiod>
+    dke:format-active-time($pbegin,$pend)
+    else ()) 
+  (: Timesheet for a weekday :)
+  else if (functx:is-value-in-sequence($timesheet/*:day,$weekdays))
+  then(
+    if($pend >= $beginTime and $timesheet/*:day = $weekdays[functx:day-of-week($d)+1])
+    then
+     dke:format-active-time($pbegin,$pend)
     else ()
+  )
+  (: Timesheet for a Holiday :)
+  else if ($timesheet/*:day = "HOL")
+  then 
+  (
+    if($pend >= $beginTime and dke:is-holiday($d,"at"))
+    then
+    dke:format-active-time($pbegin,$pend)
+    else ()
+  )
+  else if($timesheet/*:day = "WORKDAY")
+  then ()
+  else if($timesheet/*:day = "BEF_WORK_DAY")
+  then ()
+  else if($timesheet/*:day = "AFT_WORK_DAY")
+  then ()
+  else if($timesheet/*:day = "BEF_HOL")
+  then ()
+  else if($timesheet/*:day = "AFT_HOL")
+  then ()
+  else if($timesheet/*:day = "BUSY_FRI")
+  then ()
+  
+  else
+  (
+    dke:format-active-time(fn:dateTime($d,xs:time("00:00:00Z"))
+                          ,fn:dateTime(dke:add-days-to-date($d,1),xs:time("00:00:00Z"))
+                      )
 )
-else if ($timesheet/*:day = "HOL" and dke:is-holiday($d,"at"))
-then ()
-else ()
 };
+
+
 
 declare function dke:filter-with-validTime($messages as element()*, $begin as xs:dateTime, $end as xs:dateTime) as element()* {
   let $test := trace($messages,"messages")
@@ -131,5 +164,26 @@ declare function dke:weekday-from-datetime($datetime as xs:dateTime) as xs:strin
 declare function dke:is-holiday($date as xs:date,$country as xs:string) as xs:boolean
 {
   holiday:isHoliday(xs:string($date),$country)
+};
+
+declare function dke:add-days-to-date($date as xs:date, $days as xs:integer)
+as xs:date
+{
+  if($days < 0) 
+  then $date + xs:dayTimeDuration(concat('-P',fn:abs($days),'D')) 
+  else $date + xs:dayTimeDuration(concat('P',$days,'D'))
+};
+
+(: returns formatted active time interval :)
+declare function dke:format-active-time($begin as xs:dateTime, $end as xs:dateTime) as element()
+{
+  <timeperiod>
+      <begin>
+      {$begin}
+      </begin>
+      <end>
+      {$end}
+      </end>
+    </timeperiod>
 };
 

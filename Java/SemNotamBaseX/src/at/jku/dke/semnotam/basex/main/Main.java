@@ -29,10 +29,10 @@ public class Main {
 		basex.createDatabase(databaseName);//, "C:/Users/semnota_4/Desktop/SemNOTAM_Files/XMLInputFiles/notam/xml_samples");
 		basex.addXmlToDb(databaseName, schedule);
 		basex.addXmlToDb(databaseName, notamFile);
-		//basex.addXmlToDb(databaseName, inputFile);
+		basex.addXmlToDb(databaseName, inputFile);
 		
 		//System.out.println(basex.executeQuery("//*[local-name()='AIXMBasicMessage']"));
-		System.out.println( basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module.xq\"; dke:get-temporal-relevant-notams(\"test\",1)"));
+		//System.out.println( basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module.xq\"; dke:get-temporal-relevant-notams(\"test\",1)"));
 		basex.removeXmlDocument(databaseName, "xml_sample.xml");
 		basex.closeSession();
 		basex.stopServer();
