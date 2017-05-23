@@ -3,6 +3,8 @@ module namespace dke = "at.jku.dke";
 import module namespace functx = "http://www.functx.com";
 import module namespace holiday = "java:jollyday.JollydayHelper";
 
+ 
+
 (:import module namespace jollyday = "java:de.jollyday.HolidayManager";:)
 
 (: granularity: 
@@ -116,17 +118,51 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     else ()
   )
   else if($timesheet/*:day = "WORKDAY")
-  then ()
+  then (
+    if(dke:is-workday($d,"at") and $pend >= $beginTime)
+    then (
+      dke:format-active-time($pbegin,$pend)
+    )
+    else ()
+  )
   else if($timesheet/*:day = "BEF_WORK_DAY")
-  then ()
+  then (
+    let $nextday := dke:add-days-to-date($d,1)
+    return
+    if(dke:is-workday($nextday,"at") and $pend >= $beginTime)
+    then dke:format-active-time($pbegin,$pend)
+    else ()
+  )
   else if($timesheet/*:day = "AFT_WORK_DAY")
-  then ()
+  then (
+    let $prevday := dke:add-days-to-date($d,-1)
+    return
+    if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
+    then dke:format-active-time($pbegin,$pend)
+    else ()
+  )
   else if($timesheet/*:day = "BEF_HOL")
-  then ()
+  then (
+    let $nextday := dke:add-days-to-date($d,1)
+    return
+    if(dke:is-holiday($nextday,"at") and $pend >= $beginTime)
+    then dke:format-active-time($pbegin,$pend)
+    else ()
+  )
   else if($timesheet/*:day = "AFT_HOL")
-  then ()
+  then (
+    let $prevday := dke:add-days-to-date($d,-1)
+    return
+    if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
+    then dke:format-active-time($pbegin,$pend)
+    else ()
+  )
   else if($timesheet/*:day = "BUSY_FRI")
-  then ()
+  then (
+    if(dke:weekday-from-date($d) = "FRI" and $pend >= $beginTime)
+    then dke:format-active-time($pbegin,$pend)
+    else ()
+  )
   
   else
   (
@@ -154,10 +190,10 @@ declare function dke:filter-with-validTime($messages as element()*, $begin as xs
   else ()  
 };
 
-declare function dke:weekday-from-datetime($datetime as xs:dateTime) as xs:string
+declare function dke:weekday-from-date($date as xs:date) as xs:string
 {
   
-  ('MON','TUE','WED','THU','FRI','SAT','SUN')[functx:day-of-week(xs:date(substring-before(xs:string($datetime),'T')))+1]
+  dke:get-weekdays()[functx:day-of-week($date)+1]
   
 };
 
@@ -185,5 +221,17 @@ declare function dke:format-active-time($begin as xs:dateTime, $end as xs:dateTi
       {$end}
       </end>
     </timeperiod>
+};
+
+declare function dke:is-workday($date as xs:date,$country as xs:string) as xs:boolean
+{
+  let $weekday := dke:weekday-from-date($date)
+  return (not(dke:is-holiday($date,$country)) and $weekday != 'SUN' and $weekday != 'SAT')
+};
+
+declare function dke:get-weekdays() as xs:string*
+{
+  let $weekdays := ('SUN','MON','TUE','WED','THU','FRI','SAT')
+  return $weekdays
 };
 
