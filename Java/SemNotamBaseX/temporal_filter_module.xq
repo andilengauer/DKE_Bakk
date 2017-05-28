@@ -74,6 +74,11 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   let $starttime := xs:time(concat($timesheet/*:startTime,':00Z'))
   let $endtime := xs:time(concat($timesheet/*:endTime,':00Z'))
   let $dayoverlap := $endtime <= $starttime
+  
+  let $daylightsaving := 
+    if($timesheet/*:daylightSavingAdjust/text() = "YES") 
+    then xs:boolean("true") 
+    else xs:boolean("false")
     
   let $diff := days-from-duration($end - $begin)
 
@@ -88,7 +93,10 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
 
   
   for $d in $dates
-  let $pbegin := fn:dateTime($d,$starttime)
+  let $pbegin := 
+    if($daylightsaving) 
+    then (fn:dateTime($d,$starttime) + xs:dayTimeDuration("-P0DT1H"))
+    else fn:dateTime($d,$starttime)
   let $pend := 
     if($dayoverlap) then (fn:dateTime(dke:add-days-to-date($d,1),$endtime)) 
     else fn:dateTime($d,$endtime)
