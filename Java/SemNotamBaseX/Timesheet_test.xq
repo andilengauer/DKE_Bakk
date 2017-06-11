@@ -13,8 +13,8 @@ let $timesheet := (<Timesheet id="TS_1_36119438">
                           <endDate>05-01</endDate>
                           <day>MON</day>
                           <dayTil>FRI</dayTil>
-                          <startTime>00:30</startTime>
-                          <endTime>14:00</endTime>
+                          <startTime>17:00</startTime>
+                          <endTime>05:00</endTime>
                           <daylightSavingAdjust>YES</daylightSavingAdjust>
                           <excluded>NO</excluded>
                         </Timesheet>,
@@ -25,18 +25,20 @@ let $timesheet := (<Timesheet id="TS_1_36119438">
                           <endDate>05-01</endDate>
                           <day>MON</day>
                           <dayTil>FRI</dayTil>
-                          <startTime>00:30</startTime>
+                          <startTime>12:00</startTime>
                           <endTime>14:00</endTime>
                           <daylightSavingAdjust>YES</daylightSavingAdjust>
                           <excluded>YES</excluded>
                         </Timesheet>)
 let $beginTime := xs:dateTime('2017-05-22T03:04:00.000Z')
-  let $endTime := xs:dateTime('2017-05-23T12:04:00.000Z')
+  let $endTime := xs:dateTime('2017-07-23T12:04:00.000Z')
   
 let $h := dke:is-holiday(xs:date("2017-01-02"),"at")
 
-let $t := dke:get-temporal-relevant-notams("1",2)
+(:let $t := dke:get-temporal-relevant-notams("1",2):)
 
 let $ht := dke:handle-timesheets($timesheet,$beginTime,$endTime)
 
-return $ht[@exclusion="true"]
+let $y := $ht/timeperiod[begin <= endTime]
+
+return $ht
