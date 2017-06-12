@@ -143,16 +143,16 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   :)
   
   
-  let $d := trace($currentDay,"current day ")
+  let $debug1 := trace($currentDay,"current day ")
   let $debug := trace($searchDay,"search day is ")
   
   let $pbegin := 
     if($daylightsaving) 
-    then (fn:dateTime($d,$starttime) + xs:dayTimeDuration("-P0DT1H"))
-    else fn:dateTime($d,$starttime)
+    then (fn:dateTime($currentDay,$starttime) + xs:dayTimeDuration("-P0DT1H"))
+    else fn:dateTime($currentDay,$starttime)
   let $pend := 
-    if($dayoverlap) then (fn:dateTime(dke:add-days-to-date($d,1),$endtime)) 
-    else fn:dateTime($d,$endtime)
+    if($dayoverlap) then (fn:dateTime(dke:add-days-to-date($currentDay,1),$endtime)) 
+    else fn:dateTime($currentDay,$endtime)
     
   let $dayTil := $timesheet/*:dayTil/text()
   let $nextDay := dke:add-days-to-date($currentDay,1)
@@ -169,16 +169,17 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   then (
     if($pend >= $beginTime)
     then
-    (dke:format-timeinterval($pbegin,$pend),
-    dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $timesheet/*:day,xs:boolean("false"))
-  )
+    (
+      dke:format-timeinterval($pbegin,$pend)
+    )
     else ()
+    ,dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay, $searchDay,$activeDayTil)
   ) 
   
   (:--- Timesheet for a weekday (MON,TUE,WED,...) ---:)
   else if (functx:is-value-in-sequence($searchDay,dke:get-weekdays()))
   then(
-    if($pend >= $beginTime and $searchDay = dke:get-weekdays()[functx:day-of-week($d)+1])
+    if($pend >= $beginTime and $searchDay = dke:get-weekdays()[functx:day-of-week($currentDay)+1])
     then
     (
      let $searchDay := trace(
@@ -212,7 +213,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
       let $debug := trace(<dayTilIsOpen></dayTilIsOpen>)
       return(
       dke:format-timeinterval(fn:dateTime($currentDay,xs:time("00:00:00Z"))
-                          ,fn:dateTime(dke:add-days-to-date($d,1),xs:time("00:00:00Z"))
+                          ,fn:dateTime(dke:add-days-to-date($currentDay,1),xs:time("00:00:00Z"))
                       )
     ,
     dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay, $activeDayTil)
@@ -226,7 +227,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   else if ($searchDay = "HOL")
   then 
   (
-    if($pend >= $beginTime and dke:is-holiday($d,"at"))
+    if($pend >= $beginTime and dke:is-holiday($currentDay,"at"))
     then
     (
     dke:format-timeinterval($pbegin,$pend)
@@ -238,69 +239,72 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   (:--- Timesheet for a workday ---:)
   else if($searchDay = "WORKDAY")
   then (
-    if(dke:is-workday($d,"at") and $pend >= $beginTime)
+    if(dke:is-workday($currentDay,"at") and $pend >= $beginTime)
     then (
       dke:format-timeinterval($pbegin,$pend)
     )
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
   (:--- Before work day ---:)
   else if($searchDay = "BEF_WORK_DAY")
   then (
-    let $nextday := dke:add-days-to-date($d,1)
+    let $nextday := dke:add-days-to-date($currentDay,1)
     return
     if(dke:is-workday($nextday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
   (:--- after work day ---:)
   else if($searchDay = "AFT_WORK_DAY")
   then (
-    let $prevday := dke:add-days-to-date($d,-1)
+    let $prevday := dke:add-days-to-date($currentDay,-1)
     return
     if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
   (:--- before holiday ---:)
   else if($searchDay = "BEF_HOL")
   then (
-    let $nextday := dke:add-days-to-date($d,1)
-    return
-    if(dke:is-holiday($nextday,"at") and $pend >= $beginTime)
+    if(dke:is-holiday($nextDay,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
   (:--- after holiday ---:)
   else if($searchDay = "AFT_HOL")
   then (
-    let $prevday := dke:add-days-to-date($d,-1)
+    let $prevday := dke:add-days-to-date($currentDay,-1)
     return
     if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   (:--- busy friday (handle as normal friday) ---:)
   else if($searchDay = "BUSY_FRI")
   then (
-    if(dke:weekday-from-date($d) = "FRI" and $pend >= $beginTime)
+    if(dke:weekday-from-date($currentDay) = "FRI" and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
   
   (:--- not implemented timesheet -> full-time of day ---:)
   else
   (
-    dke:format-timeinterval(fn:dateTime($d,xs:time("00:00:00Z"))
-                          ,fn:dateTime(dke:add-days-to-date($d,1),xs:time("00:00:00Z"))
+    dke:format-timeinterval(fn:dateTime($currentDay,xs:time("00:00:00Z"))
+                          ,fn:dateTime($nextDay,xs:time("00:00:00Z"))
                       )
-    ,
-    dke:resolve-timesheet($timesheet, $beginTime, $endTime,dke:add-days-to-date($currentDay,1) , $searchDay, $activeDayTil)
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
 )
 };
 

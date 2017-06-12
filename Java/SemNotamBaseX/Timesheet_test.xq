@@ -11,8 +11,8 @@ let $timesheet := (<Timesheet id="TS_1_36119438">
                           <timeReference>UTC</timeReference>
                           <startDate>31-03</startDate>
                           <endDate>05-01</endDate>
-                          <day>MON</day>
-                          <dayTil></dayTil>
+                          <day>HOL</day>
+                          <dayTil>MON</dayTil>
                           <startTime>08:00</startTime>
                           <endTime>17:00</endTime>
                           <daylightSavingAdjust>YES</daylightSavingAdjust>
