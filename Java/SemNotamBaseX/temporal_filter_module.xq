@@ -91,7 +91,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   )
   
 
-  
+  let $searchDay := $timesheet/*:day
   for $d in $dates
   let $pbegin := 
     if($daylightsaving) 

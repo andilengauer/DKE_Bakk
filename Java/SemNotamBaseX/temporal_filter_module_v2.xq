@@ -22,8 +22,8 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
   let $beginTime := xs:dateTime($poi//*:beginPosition/text())
   let $endTime := xs:dateTime($poi//*:endPosition/text())
   
-  let $beginTime := xs:dateTime('2017-05-22T14:04:00.000Z')
-  let $endTime := xs:dateTime('2017-05-22T17:04:00.000Z')
+  let $beginTime := xs:dateTime('2017-06-13T14:04:00.000Z')
+  let $endTime := xs:dateTime('2017-06-17T17:04:00.000Z')
   
   let $filtered := dke:filter-with-validTime($messages,$beginTime,$endTime)
   let $result :=
@@ -92,10 +92,10 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
     let $begin := xs:date(substring-before(xs:string($beginTime),'T'))
     let $end := xs:date(substring-before(xs:string($endTime),'T'))
     
-    let $starttime := xs:time(concat($t/*:startTime,':00Z'))
-    let $endtime := xs:time(concat($t/*:endTime,':00Z'))
+    let $starttime := if(not(empty($t/*:startTime))) then xs:time(concat($t/*:startTime,':00Z')) else ()
+    let $endtime := if(not(empty($t/*:endTime))) then xs:time(concat($t/*:endTime,':00Z')) else ()
     
-    let $dayoverlap := $endtime <= $starttime
+    let $dayoverlap := not(empty($starttime)) and not(empty($endtime)) and $endtime <= $starttime
     
     let $daylightsaving := 
     if($t/*:daylightSavingAdjust/text() = "YES") 
@@ -104,7 +104,7 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
     
     let $begin := trace(if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else $begin)
     
-    let $intervals := trace(dke:resolve-timesheet(trace($t,"current timesheet"), $beginTime, $endTime, $begin, $t/*:day,xs:boolean("false")))
+    let $intervals := trace(dke:resolve-timesheet($t, $beginTime, $endTime, $begin, $t/*:day,xs:boolean("false")),"resolved intervals: ")
     
     let $exclusion := not (empty($t[*:excluded = "YES"]))
     return 
@@ -122,43 +122,57 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   let $end := xs:date(substring-before(xs:string($endTime),'T'))
   :)
   
-  let $starttime := xs:time(concat($timesheet/*:startTime,':00Z'))
-  let $endtime := xs:time(concat($timesheet/*:endTime,':00Z'))
-  let $dayoverlap := $endtime <= $starttime
+  let $starttime := 
+    if(not(empty($timesheet/*:startTime))) then xs:time(concat($timesheet/*:startTime,':00Z')) else ()
+  let $endtime := 
+    if(not(empty($timesheet/*:endTime))) then xs:time(concat($timesheet/*:endTime,':00Z')) else ()
+    
+  let $dayoverlap := not(empty($starttime)) and not(empty($endtime)) and $endtime <= $starttime
+    
+  let $startevent := $timesheet/*:startEvent
+  let $endevent := $timesheet/*:endEvent
+  
+  let $dayTil := $timesheet/*:dayTil/text()
+  
+  let $nextDay := dke:add-days-to-date($currentDay,1)
   
   let $daylightsaving := 
     if($timesheet/*:daylightSavingAdjust/text() = "YES") 
     then xs:boolean("true") 
     else xs:boolean("false")
-(:    
-  let $diff := days-from-duration($end - $begin)
-
-
-  let $dates := 
-  (
-     add prev day to dates for day overlapping times 
-    if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else (),
-    for $i in ( 0 to $diff)
-    return dke:add-days-to-date($begin,$i)
-  )
-  :)
+    
+  let $arp := trace($timesheet/ancestor::*:hasMember//*:ARP//*:pos/text(),"ARP ")
   
+  let $arp_lat := trace(substring-before($arp," "),"lat: ")
+  let $arp_lng := trace(substring-after($arp," "),"lng: ")
   
   let $debug1 := trace($currentDay,"current day ")
   let $debug := trace($searchDay,"search day is ")
   
   let $pbegin := 
-    if($daylightsaving) 
-    then (fn:dateTime($currentDay,$starttime) + xs:dayTimeDuration("-P0DT1H"))
-    else fn:dateTime($currentDay,$starttime)
-  let $pend := 
-    if($dayoverlap) then (fn:dateTime(dke:add-days-to-date($currentDay,1),$endtime)) 
-    else fn:dateTime($currentDay,$endtime)
+    if (not(empty($timesheet/*:startTime))) then fn:dateTime($currentDay,$starttime)
+    else if(not(empty($startevent))) 
+      then if($startevent = "SR") then dke:get-sunrise($currentDay, $arp_lat,$arp_lng)
+           else if($startevent = "SS") then dke:get-sunset($currentDay, $arp_lat,$arp_lng)
+           else fn:dateTime($currentDay,xs:time("00:00:00Z"))
+    else fn:dateTime($currentDay,xs:time("00:00:00Z"))
     
-  let $dayTil := $timesheet/*:dayTil/text()
-  let $nextDay := dke:add-days-to-date($currentDay,1)
+  let $pbegin := trace(if($daylightsaving) 
+                  then ($pbegin + xs:dayTimeDuration("-P0DT1H"))
+                  else $pbegin,"Intervall Anfang: ")
+  let $pend := 
+    if(not(empty($endtime))) then fn:dateTime($currentDay,$endtime)
+    else if(not(empty($endevent))) 
+      then if($endevent = "SR") then dke:get-sunrise($currentDay,$arp_lat,$arp_lng)
+           else if($endevent = "SS") then dke:get-sunset($currentDay,$arp_lat,$arp_lng)
+           else fn:dateTime($nextDay,xs:time("00:00:00Z"))
+    else fn:dateTime($nextDay,xs:time("00:00:00Z"))
+    
+  let $dayoverlap := $pend < $pbegin
+    
+  let $pend := if($dayoverlap) then $pend + xs:dayTimeDuration("P1D") else $pend
   
-  let $arp := trace($timesheet/ancestor::*:hasMember//*:ARP//*:pos/text(),"ARP ")
+  
   
   return
   
@@ -229,12 +243,14 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   else if ($searchDay = "HOL")
   then 
   (
-    if($pend >= $beginTime and dke:is-holiday($currentDay,"at"))
+    (
+    if(trace($pend >= $beginTime,"TEST:") and trace(dke:is-holiday($currentDay,"at"),"is Holiday: "))
     then
     (
-    dke:format-timeinterval($pbegin,$pend)
+    trace(dke:format-timeinterval($pbegin,$pend),"format interval: ")
     )
     else ()
+    )
     ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
   )
   
@@ -373,14 +389,17 @@ declare function dke:get-weekdays() as xs:string*
   return $weekdays
 };
 
-declare function dke:get-sunrise($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:string
+declare function dke:get-sunrise($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:dateTime
 {
-  sunstate:getSunrise(xs:string($date),$lat,$lng)
+  let $sunrise := xs:dateTime(trace(sunstate:getSunrise(xs:string(trace($date,"sr date")),trace($lat),trace($lng)),"sunrise "))
+  
+  return adjust-dateTime-to-timezone($sunrise,xs:dayTimeDuration("PT0H"))
 };
 
-declare function dke:get-sunset($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:string
+declare function dke:get-sunset($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:dateTime
 {
-  sunstate:getSunset(xs:string($date),$lat,$lng)
+  let $sunset := xs:dateTime(sunstate:getSunset(xs:string($date),$lat,$lng))
+  return adjust-dateTime-to-timezone($sunset,xs:dayTimeDuration("PT0H"))
 };
 
 

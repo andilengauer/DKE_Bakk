@@ -26,7 +26,7 @@ public class SunState {
 		JSONObject result = getSunState(date,lat,lng);
 		
 		try{
-			return result.getString("sunrise");
+			return result.getString("sunrise").split("\\+")[0];
 		}
 		catch(Exception e)
 		{
@@ -41,7 +41,7 @@ public class SunState {
 		JSONObject result = getSunState(date,lat,lng);
 		
 		try{
-			return result.getString("sunset");
+			return result.getString("sunset").split("\\+")[0];
 		}
 		catch(Exception e)
 		{
@@ -50,7 +50,7 @@ public class SunState {
 	}
 
 	private static JSONObject getSunState(String date, String lat, String lng) {
-		String requestUrl = URL + "lat=" + lat + "&lng="+lng+"&date"+date+ "&formatted=0";
+		String requestUrl = URL + "lat=" + lat + "&lng="+lng+"&date="+date+ "&formatted=0";
 		
 		try{
 			URL obj = new URL(requestUrl);
