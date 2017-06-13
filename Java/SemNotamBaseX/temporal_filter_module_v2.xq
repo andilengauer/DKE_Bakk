@@ -2,6 +2,7 @@ module namespace dke = "at.jku.dke";
 
 import module namespace functx = "http://www.functx.com";
 import module namespace holiday = "java:jollyday.JollydayHelper";
+import module namespace sunstate = "java:sunstate.SunState";
 
  
 
@@ -24,7 +25,7 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
   let $beginTime := xs:dateTime('2017-05-22T14:04:00.000Z')
   let $endTime := xs:dateTime('2017-05-22T17:04:00.000Z')
   
-  let $filtered := trace(dke:filter-with-validTime($messages,$beginTime,$endTime),'filterValid')
+  let $filtered := dke:filter-with-validTime($messages,$beginTime,$endTime)
   let $result :=
   if ($granularity = 2)  then
     dke:filter-by-activeTime($filtered,$beginTime,$endTime)
@@ -87,7 +88,7 @@ declare function dke:exist-intersection($activetimes as element()*,$beginTime as
 declare function dke:handle-timesheets($timesheets as element()*, $beginTime as xs:dateTime, $endTime as xs:dateTime) as element()*
 {
   for $t in $timesheets
-  
+    
     let $begin := xs:date(substring-before(xs:string($beginTime),'T'))
     let $end := xs:date(substring-before(xs:string($endTime),'T'))
     
@@ -103,7 +104,7 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
     
     let $begin := trace(if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else $begin)
     
-    let $intervals := trace(dke:resolve-timesheet($t, $beginTime, $endTime, $begin, $t/*:day,xs:boolean("false")))
+    let $intervals := trace(dke:resolve-timesheet(trace($t,"current timesheet"), $beginTime, $endTime, $begin, $t/*:day,xs:boolean("false")))
     
     let $exclusion := not (empty($t[*:excluded = "YES"]))
     return 
@@ -157,10 +158,11 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   let $dayTil := $timesheet/*:dayTil/text()
   let $nextDay := dke:add-days-to-date($currentDay,1)
   
+  let $arp := trace($timesheet/ancestor::*:hasMember//*:ARP//*:pos/text(),"ARP ")
   
   return
   
-  (:--- finalize recursive function if outside of interval range  --:)
+  (:--- terminate recursive function if outside of interval range  --:)
   if($endTime < fn:dateTime($currentDay,xs:time("00:00:00Z")))
   then ()
   
@@ -311,10 +313,10 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
 
 
 declare function dke:filter-with-validTime($messages as element()*, $begin as xs:dateTime, $end as xs:dateTime) as element()* {
-  let $test := trace($messages,"messages")
+  let $test := $messages
   for $m in $messages
-  let $temp := trace(($m/*:hasMember//*:timeSlice[.//*:interpretation/text()="TEMPDELTA"])[1],"temp")
-  let $vtime := trace($temp//*:validTime,"validTime")
+  let $temp := ($m/*:hasMember//*:timeSlice[.//*:interpretation/text()="TEMPDELTA"])[1]
+  let $vtime := $temp//*:validTime
   return 
   if(xs:dateTime($vtime/*:TimePeriod/*:beginPosition) <= $end 
     and 
@@ -370,4 +372,15 @@ declare function dke:get-weekdays() as xs:string*
   let $weekdays := ('SUN','MON','TUE','WED','THU','FRI','SAT')
   return $weekdays
 };
+
+declare function dke:get-sunrise($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:string
+{
+  sunstate:getSunrise(xs:string($date),$lat,$lng)
+};
+
+declare function dke:get-sunset($date as xs:date,$lat as xs:string,$lng as xs:string) as xs:string
+{
+  sunstate:getSunset(xs:string($date),$lat,$lng)
+};
+
 
