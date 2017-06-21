@@ -1,4 +1,4 @@
-import module namespace dke = "at.jku.dke" at "temporal_filter_module.xq";
+import module namespace dke = "at.jku.dke" at "temporal_filter_module_v2.xq";
 
 let $timesheet := <Timesheet id="TS_1_36119438">
                           <!-- SCHEDULE -->
@@ -13,10 +13,9 @@ let $timesheet := <Timesheet id="TS_1_36119438">
 let $beginTime := xs:dateTime('2017-05-21T03:04:00.000Z')
   let $endTime := xs:dateTime('2017-05-23T12:04:00.000Z')
   
-let $h := dke:is-holiday(xs:date("2017-01-02"),"at")
+let $sun := dke:get-sunrise(xs:date("2017-06-15"),"48.239","14.192")
 
 let $t := dke:get-temporal-relevant-notams("1",2)
 
-let $r := dke:resolve-timesheet($timesheet,$beginTime,$endTime)
 
-return dke:is-workday(xs:date("2017-05-27"),"at")
+return $t//hasNotamId

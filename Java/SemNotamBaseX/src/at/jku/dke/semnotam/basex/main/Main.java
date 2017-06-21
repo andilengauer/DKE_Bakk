@@ -18,8 +18,9 @@ public class Main {
 		//HolidayManager.getInstance().
 		
 		String notamFile = path + "/NOTAM_KJFK_Set.xml";
+		String myNotamSet = path + "/NOTAM_SET.xml";
 		String schedule = path + "/schedule_example.xml";
-		String inputFile = path + "/XML_Input/IS_FlightPlanInterest.xml";
+		String inputFile = path + "/XML_Input/IS_1.xml";
 		File f = new File(notamFile);
 		System.out.println(f.exists());
 		
@@ -27,13 +28,15 @@ public class Main {
 		basex.openSession();
 		basex.dropDatabase(databaseName);
 		basex.createDatabase(databaseName);//, "C:/Users/semnota_4/Desktop/SemNOTAM_Files/XMLInputFiles/notam/xml_samples");
-		basex.addXmlToDb(databaseName, schedule);
-		basex.addXmlToDb(databaseName, notamFile);
+		basex.addXmlToDb(databaseName, myNotamSet);
+		//basex.addXmlToDb(databaseName, notamFile);
 		basex.addXmlToDb(databaseName, inputFile);
 		
 		//System.out.println(basex.executeQuery("//*[local-name()='AIXMBasicMessage']"));
 		//System.out.println( basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module.xq\"; dke:get-temporal-relevant-notams(\"test\",1)"));
 		basex.removeXmlDocument(databaseName, "xml_sample.xml");
+		basex.removeXmlDocument(databaseName, notamFile);
+		basex.removeXmlDocument(databaseName, schedule);
 		basex.closeSession();
 		basex.stopServer();
 		/*

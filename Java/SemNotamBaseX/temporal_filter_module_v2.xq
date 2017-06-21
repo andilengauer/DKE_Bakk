@@ -5,10 +5,12 @@ import module namespace holiday = "java:jollyday.JollydayHelper";
 import module namespace sunstate = "java:sunstate.SunState";
 
  
+(: ----------------------------------------------------------------------------
+Main function as an interface to Java which returns temporal relevant notams
 
-(:import module namespace jollyday = "java:de.jollyday.HolidayManager";:)
-
-(: granularity: 
+Parameter:
+- $is_id: Id of InterestSpecification
+- granularity: 
   1-filter by validTime
   2-filter by activeTime additionally
 :)
@@ -17,13 +19,14 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
   
   let $db := db:open("Herucles")
   let $messages := $db//*:AIXMBasicMessage
-  let $poi := $db//*:PeriodOfInterest
   
-  let $beginTime := xs:dateTime($poi//*:beginPosition/text())
-  let $endTime := xs:dateTime($poi//*:endPosition/text())
+  let $interest := dke:load-interestspecification($is_id, $db)
+  let $beginTime := xs:dateTime($interest//begin)
+  let $endTime := xs:dateTime($interest//end)
   
-  let $beginTime := xs:dateTime('2017-06-13T14:04:00.000Z')
-  let $endTime := xs:dateTime('2017-06-17T17:04:00.000Z')
+  let $beginTime := xs:dateTime('2017-06-15T04:04:00.000Z')
+  let $endTime := xs:dateTime('2017-06-15T12:10:00.000Z')
+  
   
   let $filtered := dke:filter-with-validTime($messages,$beginTime,$endTime)
   let $result :=
@@ -42,6 +45,46 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
     </Result>)
   }
   </hasResult></EvaluatedInterestSpecification>
+};
+
+(: -------------------------------------------------------------------------
+This function loads relevant information from the given InterestSpecification
+parameter:
+- $is_id --> Id of InterestSpecification
+- §db --> Content of XML-Database
+
+returnvalue:
+<interest>
+<begin>2010-01-01T00:00:00</begin>
+<end>2010-01-02T00:00:00</end>
+</interest>
+:)
+declare function dke:load-interestspecification($is_id as xs:string, $db as element())
+as element()
+{
+  let $is := $db//*:InterestSpecification[@*:id = $is_id]
+  let $poi := $is//*:PeriodOfInterest[1]
+  let $timeinterval := $poi/*:occTime/*:TimeInterval
+  
+  
+  let $temporalBuffer := $poi//*:TemporalBuffer
+  let $before_buffer := 
+    if(exists($temporalBuffer/*:before)) 
+      then xs:dayTimeDuration(concat("-" ,$temporalBuffer/*:before/text()))
+    else xs:dayTimeDuration("-PT1H")
+  
+  let $after_buffer := 
+    if(exists($temporalBuffer/*:after)) 
+      then xs:dayTimeDuration($temporalBuffer/*:after/text())
+    else xs:dayTimeDuration("PT1H")
+  
+  let $begin := xs:dateTime($timeinterval/*:beginPosition/text()) + $before_buffer
+  let $end := xs:dateTime($timeinterval/*:endPosition/text()) + $after_buffer
+  return 
+  <interest>
+  <begin>$begin</begin>
+  <end>$end</end>
+  </interest>
 };
 
 declare function dke:filter-by-activeTime($messages as element()*,$beginTime as xs:dateTime,$endTime as xs:dateTime)
@@ -89,7 +132,8 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
 {
   for $t in $timesheets
     
-    let $begin := xs:date(substring-before(xs:string($beginTime),'T'))
+    let $tempBeginTime := if(exists($t/*:dayTil)) then $beginTime + xs:dayTimeDuration("-P7D") else $beginTime
+    let $begin := xs:date(substring-before(xs:string($tempBeginTime),'T'))
     let $end := xs:date(substring-before(xs:string($endTime),'T'))
     
     let $starttime := if(not(empty($t/*:startTime))) then xs:time(concat($t/*:startTime,':00Z')) else ()
@@ -103,8 +147,11 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
     else xs:boolean("false")
     
     let $begin := trace(if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else $begin)
-    
-    let $intervals := trace(dke:resolve-timesheet($t, $beginTime, $endTime, $begin, $t/*:day,xs:boolean("false")),"resolved intervals: ")
+    let $dayTil := $t/*:dayTil
+    (:dke:get-weekdays()[functx:day-of-week($date)+1]:)
+    (:let $activeDayTil := if(exists($dayTil) and functx:day-of-week($begin))
+    :)
+    let $intervals := trace(dke:resolve-timesheet($t, $tempBeginTime, $endTime, $begin, $t/*:day,xs:boolean("false")),"resolved intervals: ")
     
     let $exclusion := not (empty($t[*:excluded = "YES"]))
     return 
@@ -255,14 +302,14 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   )
   
   (:--- Timesheet for a workday ---:)
-  else if($searchDay = "WORKDAY")
+  else if($searchDay = "WORK_DAY")
   then (
     if(dke:is-workday($currentDay,"at") and $pend >= $beginTime)
     then (
       dke:format-timeinterval($pbegin,$pend)
     )
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   
   (:--- Before work day ---:)
@@ -273,7 +320,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     if(dke:is-workday($nextday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   
   (:--- after work day ---:)
@@ -284,7 +331,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   
   (:--- before holiday ---:)
@@ -293,7 +340,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     if(dke:is-holiday($nextDay,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   
   (:--- after holiday ---:)
@@ -301,10 +348,10 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
   then (
     let $prevday := dke:add-days-to-date($currentDay,-1)
     return
-    if(dke:is-workday($prevday,"at") and $pend >= $beginTime)
+    if(dke:is-holiday($prevday,"at") and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   (:--- busy friday (handle as normal friday) ---:)
   else if($searchDay = "BUSY_FRI")
@@ -312,7 +359,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     if(dke:weekday-from-date($currentDay) = "FRI" and $pend >= $beginTime)
     then dke:format-timeinterval($pbegin,$pend)
     else ()
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
   )
   
   
@@ -322,7 +369,7 @@ declare function dke:resolve-timesheet($timesheet as element(), $beginTime as xs
     dke:format-timeinterval(fn:dateTime($currentDay,xs:time("00:00:00Z"))
                           ,fn:dateTime($nextDay,xs:time("00:00:00Z"))
                       )
-    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , trace($searchDay),$activeDayTil))
+    ,(dke:resolve-timesheet($timesheet, $beginTime, $endTime,$nextDay , $searchDay,$activeDayTil))
 )
 };
 

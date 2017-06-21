@@ -1,0 +1,1138 @@
+<notams>
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="ID_1">
+  <ns5:boundedBy>
+    <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+      <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+      <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+    </Envelope>
+  </ns5:boundedBy>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41522880"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41522880">
+              <ns12:theEvent ns2:href="#Event_1_41522880"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41522880">
+              <ns5:beginPosition>2017-01-01T00:00:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2017-12-31T00:00:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41522880">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41522880">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41522880">
+                          <ns9:note>DME required except for aircraft equipped with suitable RNAV system with GPS, CRI R-140 unusable</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41522880">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="ID_2">
+  <ns5:boundedBy>
+    <Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+      <lowerCorner>40.59472493523585 -73.83803306515873</lowerCorner>
+      <upperCorner>40.68477693478519 -73.71981804595247</upperCorner>
+    </Envelope>
+  </ns5:boundedBy>
+  <ns13:hasMember>
+    <ns9:RunwayDirection ns5:id="RWYDIR011_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:RunwayDirectionTimeSlice ns5:id="RWYDIR01_TS011_41522880">
+          <ns5:validTime>
+            <ns5:TimeInstant ns5:id="RWYDIR01_TS01_TI01_41522880">
+              <ns5:timePosition>2015-10-19T04:40:20.399Z</ns5:timePosition>
+            </ns5:TimeInstant>
+          </ns5:validTime>
+          <ns9:interpretation>SNAPSHOT</ns9:interpretation>
+          <ns9:designator>04R</ns9:designator>
+          <ns9:usedRunway ns2:href="#Runway_11_41522880"/>
+          <ns9:extension>
+            <ns12:RunwayDirectionExtension ns5:id="RDE_EVENT_11_41522880">
+              <ns12:theEvent ns2:href="#Event_1_41522880"/>
+            </ns12:RunwayDirectionExtension>
+          </ns9:extension>
+        </ns9:RunwayDirectionTimeSlice>
+      </ns9:timeSlice>
+    </ns9:RunwayDirection>
+  </ns13:hasMember>
+  <ns13:hasMember>
+    <ns9:FinalLeg ns5:id="FL_1_41522880">
+      <ns5:boundedBy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      <ns9:timeSlice>
+        <ns9:FinalLegTimeSlice ns5:id="FL_TS_1_41522880">
+          <ns5:validTime>
+            <ns5:TimePeriod ns5:id="FL_TS_TP_1_41522880">
+              <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+              <ns5:endPosition indeterminatePosition="unknown">2017-07-17T00:00:00.000Z</ns5:endPosition>
+            </ns5:TimePeriod>
+          </ns5:validTime>
+          <ns9:interpretation>TEMPDELTA</ns9:interpretation>
+          <ns9:condition>
+            <ns9:ApproachCondition ns5:id="FL_AC_1_41522880">
+              <ns9:minimumSet>
+                <ns9:Minima ns5:id="FL_AC_M_1_41522880">
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_1_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_1_41522880">
+                          <ns9:note>DME required except for aircraft equipped with suitable RNAV system with GPS, CRI R-140 unusable</ns9:note>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                  <ns9:annotation>
+                    <ns9:Note ns5:id="FL_AC_M_Note_2_41522880">
+                      <ns9:propertyName>condition</ns9:propertyName>
+                      <ns9:purpose>DESCRIPTION</ns9:purpose>
+                      <ns9:translatedNote>
+                        <ns9:LinguisticNote ns5:id="FL_AC_M_Note_L_2_41522880">
+                          <ns9:note/>
+                        </ns9:LinguisticNote>
+                      </ns9:translatedNote>
+                    </ns9:Note>
+                  </ns9:annotation>
+                </ns9:Minima>
+              </ns9:minimumSet>
+            </ns9:ApproachCondition>
+          </ns9:condition>
+        </ns9:FinalLegTimeSlice>
+      </ns9:timeSlice>
+    </ns9:FinalLeg>
+  </ns13:hasMember>
+</ns13:AIXMBasicMessage>
+
+
+<ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" ns5:id="ID_3"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>OAK</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-03-31T07:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2018-01-05T14:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>MON</ns6:day>
+                                       <ns6:startTime>08:00</ns6:startTime>
+                                       <ns6:endTime>17:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_4"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>HOL</ns6:day>
+                                       <ns6:startTime>06:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_5"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>WORK_DAY</ns6:day>
+                                       <ns6:startTime>06:00</ns6:startTime>
+                                       <ns6:endTime>17:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_6"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>BEF_WORK_DAY</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_7"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>AFT_WORK_DAY</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_8"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>BEF_HOL</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_8_2"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>AFT_HOL</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_9"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>BUSY_FRI</ns6:day>
+                                       <ns6:startTime>07:00</ns6:startTime>
+                                       <ns6:endTime>19:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_10"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>MON</ns6:day>
+                                       <dayTil>FRI</dayTil>
+                                       <ns6:startTime>08:00</ns6:startTime>
+                                       <ns6:endTime>12:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_11"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>WED</ns6:day>
+                                       <ns6:startEvent>SR</ns6:startEvent>
+                                       <ns6:endEvent>SS</ns6:endEvent>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_12"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>THU</ns6:day>
+                                       <ns6:startTime>04:00</ns6:startTime>
+                                       <ns6:endTime>23:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>THU</ns6:day>
+                                       <ns6:startTime>10:00</ns6:startTime>
+                                       <ns6:endTime>15:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                       <excluded>YES</excluded>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_13"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>TUE</ns6:day>
+                                       <ns6:startTime>19:00</ns6:startTime>
+                                       <ns6:endTime>05:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_14"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>ANY</ns6:day>
+                                       <ns6:startTime>08:00</ns6:startTime>
+                                       <ns6:endTime>16:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+            
+            <ns13:AIXMBasicMessage xmlns:ns13="http://www.aixm.aero/schema/5.1/message" xmlns:ns1="http://www.opengis.net/ows/1.1" 
+            xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns3="http://www.opengis.net/wfs/2.0" xmlns:ns4="http://www.opengis.net/fes/2.0" xmlns:ns5="http://www.opengis.net/gml/3.2" 
+            xmlns:ns6="http://www.aixm.aero/schema/5.1/extensions/FAA/FNSE" xmlns:ns7="http://www.isotc211.org/2005/gco" xmlns:ns8="http://www.isotc211.org/2005/gmd" xmlns:ns9="http://www.aixm.aero/schema/5.1" 
+            xmlns:ns10="http://www.isotc211.org/2005/gts" xmlns:ns11="urn:us.gov.dot.faa.aim.fns" xmlns:ns12="http://www.aixm.aero/schema/5.1/event" xmlns:ns14="http://www.opengis.net/wfs-util/2.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+            ns5:id="ID_15"> 
+               <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               <ns13:hasMember>
+                  <ns6:AirportHeliport ns5:id="Airport_1_36119438">
+                     <ns5:boundedBy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="Airport_TS_1_36119438">
+                           <ns5:validTime>
+                              <ns5:TimeInstant ns5:id="Airport_TS_TI_1_36119438">
+                                 <ns5:timePosition>2014-04-10T13:34:37.078Z</ns5:timePosition>
+                              </ns5:TimeInstant>
+                           </ns5:validTime>
+                           <ns6:interpretation>SNAPSHOT</ns6:interpretation>
+                           <ns6:designator>LNZ</ns6:designator>
+                           <ns6:name>Linz Blue Danube Airport</ns6:name>
+                           <ns6:locationIndicatorICAO>LOWL</ns6:locationIndicatorICAO>
+                           <ns6:ARP>
+                              <ns6:ElevatedPoint srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" ns5:id="EP01_36119438">
+                                 <ns5:pos>48.233730 14.189799</ns5:pos>
+                              </ns6:ElevatedPoint>
+                           </ns6:ARP>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_1_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                     <ns6:timeSlice>
+                        <ns6:AirportHeliportTimeSlice ns5:id="AHV01_TS02_36119438">
+                           <ns5:validTime>
+                              <ns5:TimePeriod ns5:id="AHV01_TS02_TP01_36119438">
+                                 <ns5:beginPosition>2017-06-01T00:00:00.000Z</ns5:beginPosition>
+                                 <ns5:endPosition>2017-06-30T00:00:00.000Z</ns5:endPosition>
+                              </ns5:TimePeriod>
+                           </ns5:validTime>
+                           <ns6:interpretation>TEMPDELTA</ns6:interpretation>
+                           <ns6:availability>
+                              <ns6:AirportHeliportAvailability ns5:id="SERVOPSTAT01_36119438">
+                                 <ns6:timeInterval>
+                                    <ns6:Timesheet ns5:id="TS_1_36119438"> <!-- SCHEDULE -->
+                                       <ns6:timeReference>UTC</ns6:timeReference>
+                                       <ns6:startDate>01-06</ns6:startDate>
+                                       <ns6:endDate>30-06</ns6:endDate>
+                                       <ns6:day>OTHER</ns6:day>
+                                       <ns6:startTime>08:00</ns6:startTime>
+                                       <ns6:endTime>16:00</ns6:endTime>
+                                       <ns6:daylightSavingAdjust>YES</ns6:daylightSavingAdjust>
+                                    </ns6:Timesheet>
+                                 </ns6:timeInterval>
+                                 <ns6:warning>OTHER:MAINTENANCE</ns6:warning>
+                              </ns6:AirportHeliportAvailability>
+                           </ns6:availability>
+                           <ns6:extension>
+                              <ns10:AirportHeliportExtension ns5:id="AHE_EVENT_2_36119438">
+                                 <ns10:theEvent ns2:href="#Event_1_36119438"/>
+                              </ns10:AirportHeliportExtension>
+                           </ns6:extension>
+                        </ns6:AirportHeliportTimeSlice>
+                     </ns6:timeSlice>
+                  </ns6:AirportHeliport>
+               </ns13:hasMember>
+               
+            </ns13:AIXMBasicMessage>
+            
+</notams>

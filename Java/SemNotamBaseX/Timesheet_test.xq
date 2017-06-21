@@ -33,7 +33,7 @@ let $timesheet := (<Timesheet id="TS_1_36119438">
 let $beginTime := xs:dateTime('2017-06-12T03:04:00.000Z')
   let $endTime := xs:dateTime('2017-06-24T12:04:00.000Z')
   
-let $h := dke:is-holiday(xs:date("2017-01-02"),"at")
+let $h := dke:is-holiday(xs:date("2017-06-15"),"at")
 
 (:let $t := dke:get-temporal-relevant-notams("1",2):)
 
@@ -41,4 +41,4 @@ let $ht := dke:handle-timesheets($timesheet[1],$beginTime,$endTime)
 
 let $y := $ht/timeperiod[begin <= endTime]
 
-return $ht
+return $h
