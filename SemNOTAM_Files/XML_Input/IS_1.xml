@@ -1,81 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Input>
 <InterestSpecification xmlns="http://semnotam.frequentis.com/schema/1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xsi:schemaLocation="http://semnotam.frequentis.com/schema/1.0 InterestSpecificationSchema.xsd"
   xmlns:gml="http://www.opengis.net/gml/3.2"
   id="1">
   <timeStamp>2016-03-22T13:37:00.123Z</timeStamp>
-  <metaInformation>
-    <NotamSetMetaInformation>
-      <annotation>
-        <AnnotationInformation>
-          <hasAnnotation>
-            <Annotation>
-              <hasGrouping>
-                <AnnotationGrouping>
-                  <groupingName>Importance</groupingName>
-                </AnnotationGrouping>
-              </hasGrouping>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Unknown Importance</groupName>
-                  <groupOrder>1</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Flight Critical</groupName>
-                  <groupOrder>2</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Special Consideration</groupName>
-                  <groupOrder>3</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Operational Restriction</groupName>
-                  <groupOrder>4</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Potential Hazard</groupName>
-                  <groupOrder>5</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-              <hasGroup>
-                <AnnotationGroup>
-                  <groupName>Additional Information</groupName>
-                  <groupOrder>6</groupOrder>
-                </AnnotationGroup>
-              </hasGroup>
-            </Annotation>
-          </hasAnnotation>
-        </AnnotationInformation>
-      </annotation>
-      <filter>
-        <FilterInformation>
-          <hasFilter>
-            <Filter>
-              <hasGrouping>
-                <FilterGrouping>
-                  <groupingName>Relevance</groupingName>
-                </FilterGrouping>
-              </hasGrouping>
-              <hasGroup>
-                <FilterGroup>
-                  <groupName>Relevant</groupName>
-                </FilterGroup>
-              </hasGroup>
-            </Filter>
-          </hasFilter>
-        </FilterInformation>
-      </filter>
-    </NotamSetMetaInformation>
-  </metaInformation>
   <interest> <!-- AB HIER --> 
     <PeriodOfInterest> 
       <occTime>
@@ -93,3 +23,54 @@
     </PeriodOfInterest>   
   </interest> 
 </InterestSpecification>
+
+<InterestSpecification xmlns="http://semnotam.frequentis.com/schema/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://semnotam.frequentis.com/schema/1.0 InterestSpecificationSchema.xsd"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  id="2">
+  <timeStamp>2016-03-22T13:37:00.123Z</timeStamp>
+  <interest> <!-- AB HIER --> 
+    <PeriodOfInterest> 
+      <occTime>
+        <TimeInterval>
+          <beginPosition>2017-06-22T13:45:00.123Z</beginPosition>
+          <endPosition>2016-06-22T17:00:00.123Z</endPosition>
+        </TimeInterval>
+      </occTime>
+      <timeBuffer>
+        <TemporalBuffer>
+          <before>PT1H</before>
+          <after>PT5H</after>
+        </TemporalBuffer>
+      </timeBuffer>
+    </PeriodOfInterest>   
+  </interest> 
+</InterestSpecification>
+
+<InterestSpecification xmlns="http://semnotam.frequentis.com/schema/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://semnotam.frequentis.com/schema/1.0 InterestSpecificationSchema.xsd"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  id="3">
+  <timeStamp>2016-03-22T13:37:00.123Z</timeStamp>
+  
+  <interest> <!-- AB HIER --> 
+    <PeriodOfInterest> 
+      <occTime>
+        <TimeInterval>
+          <beginPosition>2017-06-21T07:37:00.123Z</beginPosition>
+          <endPosition>2016-06-21T11:37:00.123Z</endPosition>
+        </TimeInterval>
+      </occTime>
+      <timeBuffer>
+        <TemporalBuffer>
+          <before>PT1H</before>
+          <after>PT5H</after>
+        </TemporalBuffer>
+      </timeBuffer>
+    </PeriodOfInterest>   
+  </interest> 
+</InterestSpecification>
+
+</Input>

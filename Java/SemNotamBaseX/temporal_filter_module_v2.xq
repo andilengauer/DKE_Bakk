@@ -132,7 +132,7 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
 {
   for $t in $timesheets
     
-    let $tempBeginTime := if(exists($t/*:dayTil)) then $beginTime + xs:dayTimeDuration("-P7D") else $beginTime
+    let $tempBeginTime := if(exists($t/*:dayTil)) then $beginTime + xs:dayTimeDuration("-P0D") else $beginTime
     let $begin := xs:date(substring-before(xs:string($tempBeginTime),'T'))
     let $end := xs:date(substring-before(xs:string($endTime),'T'))
     
@@ -149,9 +149,27 @@ declare function dke:handle-timesheets($timesheets as element()*, $beginTime as 
     let $begin := trace(if ( $dayoverlap) then dke:add-days-to-date($begin, -1) else $begin)
     let $dayTil := $t/*:dayTil
     (:dke:get-weekdays()[functx:day-of-week($date)+1]:)
-    (:let $activeDayTil := if(exists($dayTil) and functx:day-of-week($begin))
-    :)
-    let $intervals := trace(dke:resolve-timesheet($t, $tempBeginTime, $endTime, $begin, $t/*:day,xs:boolean("false")),"resolved intervals: ")
+    let $dayIndex := 
+      if(index-of(dke:get-weekdays(),$t/*:day) != ()) then index-of(dke:get-weekdays(),$t/*:day)
+      else ()
+       
+    let $activeDayTil := 
+      if(exists($dayTil) and index-of(dke:get-weekdays(),$t/*:day) >= 0)
+      then (
+        let $startIndex := index-of(dke:get-weekdays(),$t/*:day)
+        let $midIndex := functx:day-of-week($begin) + 1
+        let $endIndex := index-of(dke:get-weekdays(),$dayTil)
+        
+        let $endIndex := if ($endIndex < $startIndex) then $endIndex + 10 else $endIndex
+        let $midIndex := if($midIndex < $startIndex) then $midIndex + 10 else $midIndex
+        
+        return $midIndex > $startIndex and $midIndex <= $endIndex
+      )
+      else xs:boolean("false")
+      
+      let $searchDay := if(trace($activeDayTil,"activeDayTil :")) then $dayTil else $t/*:day
+    
+    let $intervals := trace(dke:resolve-timesheet($t, $tempBeginTime, $endTime, $begin, $searchDay,$activeDayTil),"resolved intervals: ")
     
     let $exclusion := not (empty($t[*:excluded = "YES"]))
     return 
