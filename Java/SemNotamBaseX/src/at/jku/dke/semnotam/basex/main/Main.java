@@ -1,6 +1,12 @@
 package at.jku.dke.semnotam.basex.main;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 import org.basex.core.Context;
 
@@ -33,10 +39,20 @@ public class Main {
 		basex.addXmlToDb(databaseName, inputFile);
 		
 		//System.out.println(basex.executeQuery("//*[local-name()='AIXMBasicMessage']"));
-		//System.out.println( basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module.xq\"; dke:get-temporal-relevant-notams(\"test\",1)"));
-		basex.removeXmlDocument(databaseName, "xml_sample.xml");
-		basex.removeXmlDocument(databaseName, notamFile);
-		basex.removeXmlDocument(databaseName, schedule);
+		System.out.println(basex.executeQuery("Q{org.basex.util.Prop}USERHOME()"));
+		String result = basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module_v2.xq\"; dke:get-temporal-relevant-notams(\"1\",2)");
+		//File f = new File(path+"/XML_Output/output1");
+		Path p = Paths.get(path+"/XML_Output/output1.xml");
+		/*
+		try {
+			Files.write(p, result.getBytes(), StandardOpenOption.CREATE);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		//basex.removeXmlDocument(databaseName, "xml_sample.xml");
+		//basex.removeXmlDocument(databaseName, notamFile);
+		//basex.removeXmlDocument(databaseName, schedule);
 		basex.closeSession();
 		basex.stopServer();
 		/*

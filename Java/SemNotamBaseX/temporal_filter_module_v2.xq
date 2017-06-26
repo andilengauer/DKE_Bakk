@@ -21,12 +21,13 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
   let $messages := $db//*:AIXMBasicMessage
   
   let $interest := dke:load-interestspecification($is_id, $db)
-  let $beginTime := xs:dateTime($interest//begin)
-  let $endTime := xs:dateTime($interest//end)
+  let $beginTime := xs:dateTime($interest//begin/text())
+  let $endTime := xs:dateTime($interest//end/text())
   
+  (:
   let $beginTime := xs:dateTime('2017-06-15T04:04:00.000Z')
   let $endTime := xs:dateTime('2017-06-15T12:10:00.000Z')
-  
+  :)
   
   let $filtered := dke:filter-with-validTime($messages,$beginTime,$endTime)
   let $result :=
@@ -59,7 +60,7 @@ returnvalue:
 <end>2010-01-02T00:00:00</end>
 </interest>
 :)
-declare function dke:load-interestspecification($is_id as xs:string, $db as element())
+declare function dke:load-interestspecification($is_id as xs:string, $db as document-node()+)
 as element()
 {
   let $is := $db//*:InterestSpecification[@*:id = $is_id]
@@ -82,8 +83,8 @@ as element()
   let $end := xs:dateTime($timeinterval/*:endPosition/text()) + $after_buffer
   return 
   <interest>
-  <begin>$begin</begin>
-  <end>$end</end>
+  <begin>{$begin}</begin>
+  <end>{$end}</end>
   </interest>
 };
 
