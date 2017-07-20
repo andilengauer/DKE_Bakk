@@ -9,15 +9,16 @@ import module namespace sunstate = "java:sunstate.SunState";
 Main function as an interface to Java which returns temporal relevant notams
 
 Parameter:
+- $db_name: Name of BaseX database
 - $is_id: Id of InterestSpecification
 - granularity: 
   1-filter by validTime
   2-filter by activeTime additionally
 :)
-declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granularity as xs:integer) as element()
+declare function dke:get-temporal-relevant-notams($db_name as xs:string,$is_id as xs:string,$granularity as xs:integer) as element()
 {
   
-  let $db := db:open("Herucles")
+  let $db := db:open($db_name)
   let $messages := $db//*:AIXMBasicMessage
   
   let $interest := dke:load-interestspecification($is_id, $db)
@@ -52,7 +53,7 @@ declare function dke:get-temporal-relevant-notams($is_id as xs:string,$granulari
 This function loads relevant information from the given InterestSpecification
 parameter:
 - $is_id --> Id of InterestSpecification
-- §db --> Content of XML-Database
+- $db --> Content of XML-Database
 
 returnvalue:
 <interest>
@@ -86,6 +87,20 @@ as element()
   <begin>{$begin}</begin>
   <end>{$end}</end>
   </interest>
+};
+
+declare %updating function dke:resolve-preemptive($db_name as xs:string, $begin as xs:dateTime, $end as xs:dateTime)
+{
+  let $db := db:open($db_name)
+  let $messages := $db//*:AIXMBasicMessage
+  
+  
+    let $tdMessage := ($messages/*:hasMember//*:timeSlice[.//*:interpretation/text()="TEMPDELTA"])
+    for $t in $tdMessage//*:timeInterval
+    let $activetimes := dke:handle-timesheets($t//*:Timesheet, $begin, $end)
+    (:let $debug := trace($t):)
+    return insert node $activetimes into $t
+    
 };
 
 declare function dke:filter-by-activeTime($messages as element()*,$beginTime as xs:dateTime,$endTime as xs:dateTime)
