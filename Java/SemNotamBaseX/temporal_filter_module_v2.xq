@@ -25,10 +25,10 @@ declare function dke:get-temporal-relevant-notams($db_name as xs:string,$is_id a
   let $beginTime := xs:dateTime($interest//begin/text())
   let $endTime := xs:dateTime($interest//end/text())
   
-  (:
-  let $beginTime := xs:dateTime('2017-06-15T04:04:00.000Z')
-  let $endTime := xs:dateTime('2017-06-15T12:10:00.000Z')
-  :)
+  
+  let $beginTime := xs:dateTime('2017-06-16T04:04:00.000Z')
+  let $endTime := xs:dateTime('2017-06-21T12:10:00.000Z')
+  
   
   let $filtered := dke:filter-with-validTime($messages,$beginTime,$endTime)
   let $result :=
@@ -98,8 +98,12 @@ declare %updating function dke:resolve-preemptive($db_name as xs:string, $begin 
     let $tdMessage := ($messages/*:hasMember//*:timeSlice[.//*:interpretation/text()="TEMPDELTA"])
     for $t in $tdMessage//*:timeInterval
     let $activetimes := dke:handle-timesheets($t//*:Timesheet, $begin, $end)
+    let $preemptiveNode := 
+    <resolvedPreemptive begin="{$begin}" end="{$end}">
+    {$activetimes}
+    </resolvedPreemptive>
     (:let $debug := trace($t):)
-    return insert node $activetimes into $t
+    return insert node $preemptiveNode into $t
     
 };
 
@@ -113,7 +117,12 @@ as element()* {
   else
     let $tdMessage := ($m/*:hasMember//*:timeSlice[.//*:interpretation/text()="TEMPDELTA"])[1]
     for $t in $tdMessage//*:timeInterval
-    let $activetimes := dke:handle-timesheets($t//*:Timesheet, $beginTime, $endTime)
+    let $resolved := $t//resolvedPreemptive[@begin <= $beginTime and @end >= $endTime]/activetimes
+    let $debug := trace($resolved,"Resolved")
+    let $activetimes := 
+      if(not(empty($resolved))) then $resolved
+      else dke:handle-timesheets($t//*:Timesheet, $beginTime, $endTime)
+    
     return if(dke:exist-intersection($activetimes,$beginTime,$endTime))
       then $m/@*:id
       else ()
