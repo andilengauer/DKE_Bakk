@@ -39,8 +39,8 @@ public class Main {
 		basex.addXmlToDb(databaseName, inputFile);
 		
 		//System.out.println(basex.executeQuery("//*[local-name()='AIXMBasicMessage']"));
-		System.out.println(basex.executeQuery("Q{org.basex.util.Prop}USERHOME()"));
-		String result = basex.executeQueryString("import module namespace dke = \"at.jku.dke\" at \"temporal_filter_module_v2.xq\"; dke:get-temporal-relevant-notams(\"1\",2)");
+		//System.out.println(basex.executeQuery("Q{org.basex.util.Prop}USERHOME()"));
+		String result = basex.executeQueryString("import module namespace dke = \"at.jku.dke\"; dke:get-temporal-relevant-notams(\"Herucles\",\"1\",2)");
 		//File f = new File(path+"/XML_Output/output1");
 		Path p = Paths.get(path+"/XML_Output/output1.xml");
 		/*
